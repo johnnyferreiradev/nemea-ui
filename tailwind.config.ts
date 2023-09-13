@@ -1,8 +1,22 @@
 /** @type {import('tailwindcss').Config} */
+import colors from 'tailwindcss/colors';
+
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: colors.indigo,
+        secondary: colors.purple,
+        tertiary: colors.cyan,
+        grayscale: colors.slate,
+        success: colors.green,
+        failure: colors.red,
+        warning: colors.yellow,
+        dark: '#020617',
+        light: '#ffffff',
+      },
+    },
     keyframes: {
       fadeIn: {
         '0%': { opacity: 0 },

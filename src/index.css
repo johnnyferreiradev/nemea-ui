@@ -37,40 +37,8 @@
     --danger-color: #e7401c;
     --danger-color-300: #c23320;
 
-    --dark-color: #01102d;
+    --dark-color: #020617;
     --white-color: #ffffff;
-  }
-
-  /* Hind font family */
-  @font-face {
-    font-family: 'Hind';
-    src: url('./lib/assets/fonts/Hind/Hind-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Hind';
-    src: url('./lib/assets/fonts/Hind/Hind-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Hind';
-    src: url('./lib/assets/fonts/Hind/Hind-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Hind';
-    src: url('./lib/assets/fonts/Hind/Hind-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Hind';
-    src: url('./lib/assets/fonts/Hind/Hind-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
   }
 
   /* Icons font family */
@@ -81,39 +49,23 @@
   }
 
   *:focus {
-    outline: 2px solid var(--primary-color-300);
-    border-radius: 4px;
-  }
-
-  html,
-  body {
-    font-family: Hind, system-ui, sans-serif;
-    letter-spacing: 0.5px;
+    @apply outline outline-2 outline-grayscale-300 rounded;
   }
 
   body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: var(--dark-color);
-  }
-
-  html.dark body {
-    color: var(--light-color);
+    @apply text-dark dark:text-light;
   }
 
   /* Default scroll style */
   .default-scroll::-webkit-scrollbar-track {
-    background: none;
-    border-radius: 4px;
+    @apply bg-none rounded;
   }
   .default-scroll::-webkit-scrollbar {
-    width: 6px;
-    height: 6px;
-    background: #0000;
-    border-radius: 4px;
+    @apply h-1.5 w-1.5 bg-dark/0 rounded;
   }
   .default-scroll::-webkit-scrollbar-thumb {
-    background: var(--grayscale-200);
-    border-radius: 4px;
+    @apply bg-grayscale-400 rounded;
   }
 }

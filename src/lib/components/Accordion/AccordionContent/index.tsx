@@ -12,7 +12,7 @@ export default function AccordionContent({
   return (
     <RadixAccordion.Content
       className={twMerge(
-        'au-accordion-content overflow-hidden',
+        'au-accordion-content overflow-hidden text-dark dark:text-light',
         'data-[state="open"]:animate-slide-down data-[state="closed"]:animate-slide-up',
         className,
       )}

@@ -12,15 +12,19 @@ export default function AccordionHeader({
   return (
     <RadixAccordion.Header
       className={twMerge(
-        'au-accordion-header border-solid border border-b-[grayscale-100]',
-        'border-t-0 border-l-0 border-r-0 dark:border-b-[grayscale-300]',
+        'au-accordion-header border-solid border border-b-grayscale-200',
+        'border-t-0 border-l-0 border-r-0 dark:border-b-grayscale-600',
+        '',
         className,
       )}
       id={id}
     >
       <RadixAccordion.Trigger
         asChild={asChild}
-        className="outline-[var(--grayscale-100)] w-full text-start"
+        className={twMerge(
+          'outline-grayscale-300 dark:outline-grayscale-600 w-full text-start',
+          'text-dark dark:text-light',
+        )}
       >
         {children}
       </RadixAccordion.Trigger>
