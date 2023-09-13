@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary-color-100: #d2d1ff;
+    --primary-color: #4746d8;
+    --primary-color-300: #363aa3;
+    --primary-color-400: #1c2359;
+
+    --secondary-color: #ffab2c;
+    --secondary-color-200: #ff7a00;
+
+    --tertiary-color-1: #6ddc47;
+    --tertiary-color-2: #ff5348;
+    --tertiary-color-3: #ef6b8a;
+
+    --support-pastel-color-1: #faf3ea;
+    --support-pastel-color-2: #8f52cc;
+
+    --white-gray-color: #fcfcfc;
+    --gray-color: #f6f6f6;
+    --grayscale-100: #eaeaf0;
+    --grayscale-200: #b4b6cb;
+    --grayscale-300: #5e6c88;
+    --grayscale-400: #262b53;
+
+    --success-color-100: #dcfed9;
+    --success-color: #45c93a;
+    --success-color-300: #369e2d;
+
+    --warning-color-100: #fff8bc;
+    --warning-color: #ffe70f;
+
+    --danger-color-100: #ffe6e1;
+    --danger-color: #e7401c;
+    --danger-color-300: #c23320;
+
+    --dark-color: #01102d;
+    --white-color: #ffffff;
+  }
+
+  /* Hind font family */
+  @font-face {
+    font-family: 'Hind';
+    src: url('./lib/assets/fonts/Hind/Hind-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Hind';
+    src: url('./lib/assets/fonts/Hind/Hind-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Hind';
+    src: url('./lib/assets/fonts/Hind/Hind-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Hind';
+    src: url('./lib/assets/fonts/Hind/Hind-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Hind';
+    src: url('./lib/assets/fonts/Hind/Hind-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  /* Icons font family */
+  @font-face {
+    font-family: 'Icons';
+    src: url('./lib/assets/fonts/Icons/Icons.ttf') format('truetype');
+    font-style: normal;
+  }
+
+  *:focus {
+    outline: 2px solid var(--primary-color-300);
+    border-radius: 4px;
+  }
+
+  html,
+  body {
+    font-family: Hind, system-ui, sans-serif;
+    letter-spacing: 0.5px;
+  }
+
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: var(--dark-color);
+  }
+
+  html.dark body {
+    color: var(--light-color);
+  }
+
+  /* Default scroll style */
+  .default-scroll::-webkit-scrollbar-track {
+    background: none;
+    border-radius: 4px;
+  }
+  .default-scroll::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background: #0000;
+    border-radius: 4px;
+  }
+  .default-scroll::-webkit-scrollbar-thumb {
+    background: var(--grayscale-200);
+    border-radius: 4px;
+  }
+}
