@@ -1,19 +1,20 @@
-import FormRoot from './FormRoot';
-import FormControl from './FormControl';
+import { FormProvider } from 'react-hook-form';
+
 import FormField from './FormField';
+import FormItem from './FormItem';
 import FormLabel from './FormLabel';
+import FormControl from './FormControl';
+import FormDescription from './FormDescription';
 import FormMessage from './FormMessage';
-import FormSubmit from './FormSubmit';
-import FormErrorMessage from './FormErrorMessage';
-import FormCustomControl from './FormCustomControl';
+
+const FormRoot = FormProvider;
 
 export const Form = {
   Root: FormRoot,
-  Control: FormControl,
   Field: FormField,
+  Item: FormItem,
   Label: FormLabel,
+  Control: FormControl,
+  Description: FormDescription,
   Message: FormMessage,
-  Submit: FormSubmit,
-  ErrorMessage: FormErrorMessage,
-  CustomControl: FormCustomControl,
 };

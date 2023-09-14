@@ -1,11 +1,11 @@
 import { Meta, StoryObj } from '@storybook/react';
 
-import { Label } from '../index';
+import Label from './index';
 import { LabelProps } from './types';
 
 export default {
   title: 'Components/Label/LabelRoot',
-  component: Label.Root,
+  component: Label,
   tags: ['autodocs'],
   args: {
     children: <>Label</>,

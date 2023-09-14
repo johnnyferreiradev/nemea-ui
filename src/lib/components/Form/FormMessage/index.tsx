@@ -1,23 +1,35 @@
+import { forwardRef } from 'react';
 import { twMerge } from 'tailwind-merge';
-import * as RadixForm from '@radix-ui/react-form';
 
-import { FormMessageProps } from './types';
+import { useFormField } from '../FormField/hooks';
 
-export default function FormMessage({
-  className = '',
-  match,
-  children,
-}: FormMessageProps) {
+const FormMessage = forwardRef<
+  HTMLParagraphElement,
+  React.HTMLAttributes<HTMLParagraphElement>
+>(({ className, children, ...props }, ref) => {
+  const { error, formMessageId } = useFormField();
+  const body = error ? String(error?.message) : children;
+
+  if (!body) {
+    return null;
+  }
+
   return (
-    <RadixForm.Message
+    <p
+      ref={ref}
+      id={formMessageId}
       className={twMerge(
         'form-message text-sm block mt-[6px] leading-4',
         'text-[var(--danger-color)]',
         className,
       )}
-      match={match}
+      {...props}
     >
-      {children}
-    </RadixForm.Message>
+      {body}
+    </p>
   );
-}
+});
+
+FormMessage.displayName = 'FormMessage';
+
+export default FormMessage;

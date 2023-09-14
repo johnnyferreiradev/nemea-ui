@@ -1,18 +1,20 @@
-import * as RadixForm from '@radix-ui/react-form';
 import { tv } from 'tailwind-variants';
 import { twMerge } from 'tailwind-merge';
+import { Slot } from '@radix-ui/react-slot';
 
 import { FormControlProps } from './types';
+import { forwardRef } from 'react';
+import { useFormField } from '../FormField/hooks';
 
 const formControlWrapper = tv({
   base: [
     'au-form-control-wrapper flex items-center rounded-lg border',
-    '[&:has([data-invalid="true"])]:border-[var(--danger-color)]',
+    '[&:has([aria-invalid="true"])]:border-failure-400',
   ],
   variants: {
     theme: {
       white: [
-        'bg-[var(--white-color)] border-[var(--grayscale-100)] focus-within:border-[var(--primary-color)]',
+        'bg-light-color border-grayscale-200 focus-within:border-[var(--primary-color)]',
         'dark:bg-[var(--dark-color)] dark:border-[var(--grayscale-300)]',
         '[&.is-disabled]:bg-[var(--gray-color)] [&.is-disabled]:border-[var(--gray-color)]',
         'dark:[&.is-disabled]:bg-[var(--grayscale-300)] dark:[&.is-disabled]:border-[var(--grayscale-300)]',
@@ -21,19 +23,19 @@ const formControlWrapper = tv({
       gray: [
         'bg-[var(--gray-color)] border-[var(--gray-color)] focus-within:border-[var(--gray-color)]',
         'dark:bg-[var(--grayscale-400)] dark:border-[var(--grayscale-400)]',
-        '[&.is-disabled]:bg-[var(--grayscale-100)] [&.is-disabled]:border-[var(--grayscale-100)]',
+        '[&.is-disabled]:bg-grayscale-200 [&.is-disabled]:border-grayscale-200',
         'dark:[&.is-disabled]:bg-[var(--grayscale-300)] dark:[&.is-disabled]:border-[var(--grayscale-300)]',
         'dark:[&.is-disabled>.au-form-control]:placeholder-[var(--grayscale-200)]',
       ],
       noBorder: [
-        'bg-[var(--white-color)] border-[var(--white-color)] focus-within:border-[var(--white-color)]',
+        'bg-light-color border-light-color focus-within:border-light-color',
         'dark:bg-[var(--dark-color)] dark:border-[var(--dark-color)] dark:focus-within:border-[var(--dark-color)]',
         '[&.is-disabled]:bg-[var(--gray-color)] [&.is-disabled]:border-[var(--gray-color)]',
         'dark:[&.is-disabled]:bg-[var(--grayscale-300)] dark:[&.is-disabled]:border-[var(--grayscale-300)]',
         'dark:[&.is-disabled>.au-form-control]:placeholder-[var(--grayscale-200)]',
       ],
       shadow: [
-        'bg-[var(--white-color)] border-[var(--white-color)] focus-within:border-[var(--primary-color)]',
+        'bg-light-color border-light-color focus-within:border-[var(--primary-color)]',
         'shadow-lg shadow-[var(--gray-color)] dark:shadow-[var(--grayscale-400)]',
         'dark:bg-[var(--dark-color)] dark:border-[var(--dark-color)] dark:focus-within:border-[var(--dark-color)]',
         '[&.is-disabled]:bg-[var(--gray-color)] [&.is-disabled]:border-[var(--gray-color)] [&.is-disabled]:shadow-none',
@@ -43,7 +45,7 @@ const formControlWrapper = tv({
       dark: [
         'bg-[var(--dark-color)] border-[var(--dark-color)] focus-within:border-[var(--primary-color)]',
         '[&.is-disabled]:bg-[var(--grayscale-300)] [&.is-disabled]:border-[var(--grayscale-300)]',
-        'dark:bg-[var(--white-color)] dark:border-[var(--white-color)]',
+        'dark:bg-light-color dark:border-light-color',
         'dark:[&.is-disabled]:bg-[var(--gray-color)] dark:[&.is-disabled]:border-[var(--gray-color)]',
       ],
     },
@@ -65,11 +67,11 @@ const formControl = tv({
   ],
   variants: {
     theme: {
-      white: ['text-[var(--dark-color)] dark:text-[var(--white-color)]'],
-      gray: ['text-[var(--dark-color)] dark:text-[var(--white-color)]'],
-      noBorder: ['text-[var(--dark-color)] dark:text-[var(--white-color)]'],
-      shadow: ['text-[var(--dark-color)] dark:text-[var(--white-color)]'],
-      dark: ['text-[var(--white-color)] dark:text-[var(--dark-color)]'],
+      white: ['text-[var(--dark-color)] dark:text-light-color'],
+      gray: ['text-[var(--dark-color)] dark:text-light-color'],
+      noBorder: ['text-[var(--dark-color)] dark:text-light-color'],
+      shadow: ['text-[var(--dark-color)] dark:text-light-color'],
+      dark: ['text-light-color dark:text-[var(--dark-color)]'],
     },
     size: {
       xs: 'text-xs h-[14px]',
@@ -81,35 +83,51 @@ const formControl = tv({
   },
 });
 
-export default function FormControl({
-  className = '',
-  children,
-  actions,
-  icon,
-  theme = 'white',
-  size = 'md',
-  value,
-  onChange,
-  disabled,
-}: FormControlProps) {
-  return (
-    <div
-      className={twMerge(
-        formControlWrapper({ size, theme }),
-        disabled ? 'is-disabled' : '',
-      )}
-    >
-      <span>{icon}</span>
-      <RadixForm.Control
-        className={twMerge(formControl({ size, theme }), className)}
-        asChild
-        value={value}
-        onChange={onChange}
-        disabled={disabled}
+const FormControl = forwardRef<
+  React.ElementRef<typeof Slot>,
+  React.ComponentPropsWithoutRef<typeof Slot> & FormControlProps
+>(
+  (
+    {
+      theme = 'white',
+      size = 'md',
+      className,
+      disabled,
+      icon,
+      actions,
+      ...props
+    },
+    ref,
+  ) => {
+    const { error, formItemId, formDescriptionId, formMessageId } =
+      useFormField();
+
+    return (
+      <div
+        className={twMerge(
+          formControlWrapper({ size, theme }),
+          disabled ? 'is-disabled' : '',
+        )}
       >
-        {children}
-      </RadixForm.Control>
-      {actions}
-    </div>
-  );
-}
+        <span>{icon}</span>
+        <Slot
+          ref={ref}
+          id={formItemId}
+          aria-describedby={
+            !error
+              ? `${formDescriptionId}`
+              : `${formDescriptionId} ${formMessageId}`
+          }
+          aria-invalid={!!error}
+          className={twMerge(formControl({ size, theme }), className)}
+          {...props}
+        />
+        {actions}
+      </div>
+    );
+  },
+);
+
+FormControl.displayName = 'FormControl';
+
+export default FormControl;

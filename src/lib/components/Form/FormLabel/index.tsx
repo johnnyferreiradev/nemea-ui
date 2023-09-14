@@ -1,23 +1,32 @@
+import { forwardRef } from 'react';
 import { twMerge } from 'tailwind-merge';
-import * as RadixForm from '@radix-ui/react-form';
+import * as RadixLabel from '@radix-ui/react-label';
 
-import { FormLabelProps } from './types';
+import { useFormField } from '../FormField/hooks';
 
-export default function FormLabel({
-  className = '',
-  children,
-  htmlFor,
-}: FormLabelProps) {
+import Label from '../../Label';
+
+const FormLabel = forwardRef<
+  React.ElementRef<typeof RadixLabel.Root>,
+  React.ComponentPropsWithoutRef<typeof RadixLabel.Root>
+>(({ className, ...props }, ref) => {
+  const { error, formItemId } = useFormField();
+
   return (
-    <RadixForm.Label
+    <Label
+      ref={ref}
       className={twMerge(
+        error && 'text-destructive',
         'au-form-label text-sm block mb-[6px] leading-4',
-        'text-[var(--grayscale-200)]',
+        'text-grayscale-400',
         className,
       )}
-      htmlFor={htmlFor}
-    >
-      {children}
-    </RadixForm.Label>
+      htmlFor={formItemId}
+      {...props}
+    />
   );
-}
+});
+
+FormLabel.displayName = 'FormLabel';
+
+export default FormLabel;

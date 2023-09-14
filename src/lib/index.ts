@@ -45,7 +45,8 @@ export { PageLoader } from './components/PageLoader';
 
 export { Popover } from './components/Popover';
 
-export { Label } from './components/Label';
+import Label from './components/Label';
+export { Label };
 
 export { Tooltip } from './components/Tooltip';
 
