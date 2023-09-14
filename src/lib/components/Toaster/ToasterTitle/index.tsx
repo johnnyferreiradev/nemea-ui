@@ -11,7 +11,8 @@ export default function ToasterTitle({
   return (
     <RadixToast.Title
       className={twMerge(
-        'au-toaster-title text-lg font-bold leading-4 break-all',
+        'au-toaster-title text-lg font-bold break-all leading-5 mb-1',
+        'translate-y-[2px]',
         className,
       )}
       asChild={asChild}

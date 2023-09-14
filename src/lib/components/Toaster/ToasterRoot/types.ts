@@ -1,8 +1,10 @@
 enum ToasterRootThemes {
+  primary = 'primary',
+  secondary = 'secondary',
+  tertiary = 'tertiary',
   success = 'success',
-  danger = 'danger',
+  failure = 'failure',
   warning = 'warning',
-  danger100 = 'danger100',
 }
 
 enum ToasterRootPositions {

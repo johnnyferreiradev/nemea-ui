@@ -30,13 +30,7 @@ export default {
             </Button.Root>
           </Toaster.Action>
         </Toaster.Actions>
-        <Toaster.Close>
-          <Button.Root size="sm" theme="linkGray">
-            <Button.Label>
-              <Icon name="close" size="2xl" weight="bold" />
-            </Button.Label>
-          </Button.Root>
-        </Toaster.Close>
+        <Toaster.Close />
       </Toaster.Root>
     ),
   ],

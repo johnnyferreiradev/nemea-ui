@@ -1,24 +1,35 @@
+import { forwardRef } from 'react';
 import { twMerge } from 'tailwind-merge';
 import * as RadixToast from '@radix-ui/react-toast';
 
-import { ToasterCloseProps } from './types';
+import { X } from '@phosphor-icons/react';
 
-export default function ToasterClose({
-  className = '',
-  children,
-}: ToasterCloseProps) {
-  return (
-    <RadixToast.Close
+const ToasterClose = forwardRef<
+  React.ElementRef<typeof RadixToast.Close>,
+  React.ComponentPropsWithoutRef<typeof RadixToast.Close>
+>(({ className, ...props }, ref) => (
+  <RadixToast.Close
+    ref={ref}
+    className={twMerge(
+      'au-toaster-close row-start-1 row-end-2 col-start-3 col-end-4',
+      'flex justify-end items-start cursor-pointer',
+      'flex justify-end items-start',
+      'h-full w-full outline-none',
+      'group/toaster-close',
+      className,
+    )}
+    toast-close=""
+    {...props}
+  >
+    <X
       className={twMerge(
-        'au-toaster-close row-start-1 row-end-2 col-start-4 col-end-5',
-        'flex justify-end items-start cursor-pointer',
-        '-top-[1px] flex justify-end items-start',
-        'h-max w-max p-1 pr-0 outline-none hover:opacity-80',
-        className,
+        'group-hover/toaster-close:bg-grayscale-100 rounded p-1 text-xl',
+        'h-max w-max translate-y-[2px] translate-x-1',
       )}
-      asChild
-    >
-      {children}
-    </RadixToast.Close>
-  );
-}
+    />
+  </RadixToast.Close>
+));
+
+ToasterClose.displayName = RadixToast.Close.displayName;
+
+export default ToasterClose;

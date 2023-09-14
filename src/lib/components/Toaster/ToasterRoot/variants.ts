@@ -2,14 +2,14 @@ import { tv } from 'tailwind-variants';
 
 export const toasterRoot = tv({
   base: [
-    'au-toaster-root bg-[var(--light-color)]',
-    'dark:bg-[--grayscale-color-800] p-4 rounded-lg outline-none',
-    'shadow-md dark:shadow-[var(--grayscale-color-900)]',
+    'au-toaster-root bg-light',
+    'dark:bg-grayscale-700 p-4 pt-[18px] rounded-lg outline-none',
+    'shadow-md',
     'data-[state="closed"]:animate-fade-out',
     'data-[swipe="cancel"]:transition-transform',
     'data-[swipe="cancel"]:duration-200 data-[swipe="cancel"]:ease-[ease-out]',
-    'grid grid-rows-[max-content] grid-cols-[max-content_auto_max-content_max-content] gap-4',
-    'items-center',
+    'grid grid-rows-[max-content_max-content] grid-cols-[max-content_auto_max-content] gap-4 gap-y-1',
+    'items-center border border-solid border-y-0',
 
     'data-[swipe-direction="right"]:data-[state="open"]:animate-slide-in-right',
     'data-[swipe-direction="left"]:data-[state="open"]:animate-slide-in-left',
@@ -28,33 +28,29 @@ export const toasterRoot = tv({
   ],
   variants: {
     theme: {
+      primary: [
+        'border-x-4 border-x-primary-600 border-r-0',
+        '[&>.au-toaster-icon]:text-primary-600',
+      ],
+      secondary: [
+        'border-x-4 border-x-secondary-600 border-r-0',
+        '[&>.au-toaster-icon]:text-secondary-600',
+      ],
+      tertiary: [
+        'border-x-4 border-x-tertiary-600 border-r-0',
+        '[&>.au-toaster-icon]:text-tertiary-600',
+      ],
       success: [
-        'bg-[var(--success-color)] border border-solid border-[var(--success-color)]',
-        '[&>.au-toaster-icon]:text-[var(--success-color)] [&>.au-toaster-icon]:bg-[var(--white-color)]',
-        '[&>.au-toaster-content>.au-toaster-title]:text-[var(--white-color)]',
-        '[&>.au-toaster-content>.au-toaster-description]:text-[var(--white-color)]',
-        '[&>.au-toaster-close]:text-[var(--white-color)]',
+        'border-x-4 border-x-success-500 border-r-0',
+        '[&>.au-toaster-icon]:text-success-500',
       ],
-      danger: [
-        'bg-[var(--danger-color)] border border-solid border-[var(--danger-color)]',
-        '[&>.au-toaster-icon]:text-[var(--danger-color)] [&>.au-toaster-icon]:bg-[var(--white-color)]',
-        '[&>.au-toaster-content>.au-toaster-title]:text-[var(--white-color)]',
-        '[&>.au-toaster-content>.au-toaster-description]:text-[var(--white-color)]',
-        '[&>.au-toaster-close]:text-[var(--white-color)]',
-      ],
-      danger100: [
-        'bg-[var(--danger-color-100)] border border-solid border-[var(--danger-color-100)]',
-        '[&>.au-toaster-icon]:text-[var(--danger-color)] [&>.au-toaster-icon]:bg-[var(--white-color)]',
-        '[&>.au-toaster-content>.au-toaster-title]:text-[var(--danger-color)]',
-        '[&>.au-toaster-content>.au-toaster-description]:text-[var(--danger-color)]',
-        '[&>.au-toaster-close]:text-[var(--danger-color)]',
+      failure: [
+        'border-x-4 border-x-failure-600 border-r-0',
+        '[&>.au-toaster-icon]:text-failure-600',
       ],
       warning: [
-        'bg-[var(--warning-color-100)] border border-solid border-[var(--warning-color)]',
-        '[&>.au-toaster-icon]:text-[var(--dark-color)] [&>.au-toaster-icon]:bg-[var(--warning-color)]',
-        '[&>.au-toaster-content>.au-toaster-title]:text-[var(--dark-color)]',
-        '[&>.au-toaster-content>.au-toaster-description]:text-[var(--grayscale-300)]',
-        '[&>.au-toaster-close]:text-[var(--grayscale-300)]',
+        'border-x-4 border-x-warning-400 border-r-0',
+        '[&>.au-toaster-icon]:text-warning-400 [&>.au-toaster-icon]:bg-[var(--warning-color)]',
       ],
     },
   },

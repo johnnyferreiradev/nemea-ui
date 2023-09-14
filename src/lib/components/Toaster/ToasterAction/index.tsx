@@ -1,20 +1,18 @@
+import { forwardRef } from 'react';
 import { twMerge } from 'tailwind-merge';
 import * as RadixToast from '@radix-ui/react-toast';
 
-import { ToasterActionProps } from './types';
+const ToasterAction = forwardRef<
+  React.ElementRef<typeof RadixToast.Action>,
+  React.ComponentPropsWithoutRef<typeof RadixToast.Action>
+>(({ className, ...props }, ref) => (
+  <RadixToast.Action
+    ref={ref}
+    className={twMerge('au-toaster-action', className)}
+    {...props}
+  />
+));
 
-export default function ToasterAction({
-  className = '',
-  altText,
-  children,
-}: ToasterActionProps) {
-  return (
-    <RadixToast.Action
-      className={twMerge('au-toaster-action', className)}
-      asChild
-      altText={altText}
-    >
-      {children}
-    </RadixToast.Action>
-  );
-}
+ToasterAction.displayName = RadixToast.Action.displayName;
+
+export default ToasterAction;

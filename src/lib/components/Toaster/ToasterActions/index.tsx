@@ -9,8 +9,8 @@ export default function ToasterActions({
   return (
     <div
       className={twMerge(
-        'au-toaster-actions row-start-1 row-end-2 col-start-3 col-end-4',
-        'flex items-center',
+        'au-toaster-actions row-start-2 row-end-3 col-start-2 col-end-4',
+        'flex items-center gap-4',
         className,
       )}
     >

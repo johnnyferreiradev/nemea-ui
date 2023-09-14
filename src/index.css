@@ -3,44 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
-    --primary-color-100: #d2d1ff;
-    --primary-color: #4746d8;
-    --primary-color-300: #363aa3;
-    --primary-color-400: #1c2359;
-
-    --secondary-color: #ffab2c;
-    --secondary-color-200: #ff7a00;
-
-    --tertiary-color-1: #6ddc47;
-    --tertiary-color-2: #ff5348;
-    --tertiary-color-3: #ef6b8a;
-
-    --support-pastel-color-1: #faf3ea;
-    --support-pastel-color-2: #8f52cc;
-
-    --white-gray-color: #fcfcfc;
-    --gray-color: #f6f6f6;
-    --grayscale-100: #eaeaf0;
-    --grayscale-200: #b4b6cb;
-    --grayscale-300: #5e6c88;
-    --grayscale-400: #262b53;
-
-    --success-color-100: #dcfed9;
-    --success-color: #45c93a;
-    --success-color-300: #369e2d;
-
-    --warning-color-100: #fff8bc;
-    --warning-color: #ffe70f;
-
-    --danger-color-100: #ffe6e1;
-    --danger-color: #e7401c;
-    --danger-color-300: #c23320;
-
-    --dark-color: #020617;
-    --white-color: #ffffff;
-  }
-
   /* Icons font family */
   @font-face {
     font-family: 'Icons';

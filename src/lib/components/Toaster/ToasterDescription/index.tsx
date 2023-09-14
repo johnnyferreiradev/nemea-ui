@@ -10,10 +10,7 @@ export default function ToasterDescription({
 }: ToasterDescriptionProps) {
   return (
     <RadixToast.Description
-      className={twMerge(
-        'au-toaster-description leading-5 break-all',
-        className,
-      )}
+      className={twMerge('au-toaster-description break-all', className)}
       asChild={asChild}
     >
       {children}
