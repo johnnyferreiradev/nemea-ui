@@ -9,7 +9,7 @@ export default function AlertTitle({
   return (
     <div
       className={twMerge(
-        'au-alert-title text-lg font-bold leading-4 break-all',
+        'au-alert-title text-lg font-bold break-all',
         className,
       )}
     >

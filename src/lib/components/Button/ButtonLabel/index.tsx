@@ -9,7 +9,7 @@ export default function ButtonLabel({
   return (
     <p
       className={twMerge(
-        'au-button-label inline-block mx-2 min-w-max leading-4 mt-0.5',
+        'au-button-label inline-block mx-2 min-w-max',
         'font-medium',
         className,
       )}

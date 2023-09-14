@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
 
-import Icon from '../../Icon';
+import { User } from '@phosphor-icons/react';
 
 import { Button } from '../index';
 import { ButtonProps, ButtonThemes } from './types';
@@ -46,7 +46,7 @@ export const LeftIcon: StoryObj<ButtonProps> = {
     children: (
       <>
         <Button.Icon>
-          <Icon name="user-line" />
+          <User weight="bold" />
         </Button.Icon>
         <Button.Label>Button</Button.Label>
       </>
@@ -61,7 +61,7 @@ export const RightIcon: StoryObj<ButtonProps> = {
       <>
         <Button.Label>Button</Button.Label>
         <Button.Icon>
-          <Icon name="user-line" />
+          <User weight="bold" />
         </Button.Icon>
       </>
     ),
@@ -74,11 +74,11 @@ export const BothIcons: StoryObj<ButtonProps> = {
     children: (
       <>
         <Button.Icon>
-          <Icon name="user-line" />
+          <User weight="bold" />
         </Button.Icon>
         <Button.Label>Button</Button.Label>
         <Button.Icon>
-          <Icon name="user-line" />
+          <User weight="bold" />
         </Button.Icon>
       </>
     ),

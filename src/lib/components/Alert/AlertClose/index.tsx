@@ -20,7 +20,7 @@ export default function AlertClose({
       <button
         className={twMerge(
           'au-alert-close-button rounded-full h-max w-max p-1 pr-0 outline-none',
-          'hover:opacity-80',
+          'hover:opacity-80 text-2xl',
         )}
         onClick={onClose}
       >

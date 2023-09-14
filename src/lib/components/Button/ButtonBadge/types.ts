@@ -8,16 +8,13 @@ enum ButtonBadgePositions {
 enum ButtonBadgeColors {
   primary = 'primary',
   secondary = 'secondary',
-  tertiary1 = 'tertiary1',
-  tertiary2 = 'tertiary2',
-  tertiary3 = 'tertiary3',
-  supportPastel2 = 'supportPastel2',
+  tertiary = 'tertiary',
   gray = 'gray',
   success = 'success',
-  danger = 'danger',
+  failure = 'failure',
   warning = 'warning',
   dark = 'dark',
-  white = 'white',
+  light = 'light',
 }
 
 export interface ButtonBadgeProps {

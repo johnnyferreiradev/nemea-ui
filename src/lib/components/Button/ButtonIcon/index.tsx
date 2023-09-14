@@ -8,8 +8,6 @@ export default function ButtonIcon({
   children,
 }: ButtonIconProps) {
   return (
-    <Slot className={twMerge('au-button-icon leading-4', className)}>
-      {children}
-    </Slot>
+    <Slot className={twMerge('au-button-icon', className)}>{children}</Slot>
   );
 }

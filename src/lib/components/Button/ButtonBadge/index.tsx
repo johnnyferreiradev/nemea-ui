@@ -6,22 +6,19 @@ import { ButtonBadgeProps } from './types';
 const badge = tv({
   base: [
     'au-button-badge absolute pointer-events-none font-bold min-w-[20px]',
-    'text-xs p-0.5 rounded-xl text-[var(--white-color)]',
+    'text-xs p-0.5 px-1 rounded-xl text-light text-center border-none',
   ],
   variants: {
     color: {
-      primary: 'bg-[var(--primary-color)]',
-      secondary: 'bg-[var(--secondary-color-200)]',
-      tertiary1: 'bg-[var(--tertiary-color-1)]',
-      tertiary2: 'bg-[var(--tertiary-color-2)]',
-      tertiary3: 'bg-[var(--tertiary-color-3)]',
-      supportPastel2: 'bg-[var(--support-pastel-color-2)]',
-      gray: 'bg-[var(--grayscale-300)]',
-      success: 'bg-[var(--success-color)]',
-      danger: 'bg-[var(--danger-color)]',
-      warning: 'bg-[var(--warning-color)]',
-      dark: 'bg-[var(--dark-color)]',
-      white: 'bg-[var(--white-color)] text-[var(--dark-color)]',
+      primary: 'bg-primary-500',
+      secondary: 'bg-secondary-500',
+      tertiary: 'bg-tertiary-500',
+      gray: 'bg-grayscale-500',
+      success: 'bg-success-500',
+      failure: 'bg-failure-500',
+      warning: 'bg-warning-500',
+      dark: 'bg-dark dark:bg-light',
+      light: 'bg-light dark:bg-dark',
     },
     position: {
       'top-right': '-top-2 -right-2',

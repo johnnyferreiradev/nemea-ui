@@ -1,8 +1,7 @@
 enum AlertRootThemes {
   success = 'success',
-  danger = 'danger',
+  failure = 'failure',
   warning = 'warning',
-  danger100 = 'danger100',
 }
 
 export interface AlertRootProps {
