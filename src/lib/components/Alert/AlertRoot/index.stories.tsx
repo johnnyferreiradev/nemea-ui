@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
 
-import { Warning, X } from '@phosphor-icons/react';
+import { Warning } from '@phosphor-icons/react';
 
 import { Alert } from '../index';
 import { AlertRootProps } from './types';
@@ -18,19 +18,21 @@ export default {
         </Alert.Icon>
         <Alert.Content>
           <Alert.Title>Alert title</Alert.Title>
-          <Alert.Description>Alert description</Alert.Description>
+          <Alert.Description>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae
+            odio enim. Morbi sed magna convallis urna fermentum viverra et non
+            nunc. Vivamus molestie, magna sed auctor condimentum
+          </Alert.Description>
         </Alert.Content>
         <Alert.Actions>
-          <Button.Root theme="linkFailure" size="md" className="px-2">
-            <Button.Label>Button 1</Button.Label>
+          <Button.Root theme="linkFailure" size="md" className="p-0">
+            <Button.Label className="m-0">Button 1</Button.Label>
           </Button.Root>
-          <Button.Root theme="linkPrimary" size="md" className="px-2">
-            <Button.Label>Button 2</Button.Label>
+          <Button.Root theme="linkPrimary" size="md" className="p-0">
+            <Button.Label className="m-0">Button 2</Button.Label>
           </Button.Root>
         </Alert.Actions>
-        <Alert.Close>
-          <X />
-        </Alert.Close>
+        <Alert.Close />
       </>
     ),
   },
@@ -46,9 +48,7 @@ export const WithoutIcon: StoryObj<AlertRootProps> = {
           <Alert.Title>Alert title</Alert.Title>
           <Alert.Description>Alert description</Alert.Description>
         </Alert.Content>
-        <Alert.Close>
-          <X />
-        </Alert.Close>
+        <Alert.Close />
       </>
     ),
   },
@@ -61,9 +61,7 @@ export const WithoutTitle: StoryObj<AlertRootProps> = {
         <Alert.Content>
           <Alert.Description>Alert description</Alert.Description>
         </Alert.Content>
-        <Alert.Close>
-          <X />
-        </Alert.Close>
+        <Alert.Close />
       </>
     ),
   },
@@ -76,9 +74,7 @@ export const WithoutDescription: StoryObj<AlertRootProps> = {
         <Alert.Content>
           <Alert.Title>Alert title</Alert.Title>
         </Alert.Content>
-        <Alert.Close>
-          <X />
-        </Alert.Close>
+        <Alert.Close />
       </>
     ),
   },

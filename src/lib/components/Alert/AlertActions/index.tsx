@@ -9,8 +9,8 @@ export default function AlertActions({
   return (
     <div
       className={twMerge(
-        'au-alert-actions row-start-1 row-end-2 col-start-3 col-end-4',
-        'flex items-center',
+        'au-alert-actions row-start-2 row-end-3 col-start-2 col-end-4',
+        'flex items-center gap-4 pt-2',
         className,
       )}
     >

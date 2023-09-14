@@ -13,7 +13,6 @@ const ToasterClose = forwardRef<
     className={twMerge(
       'au-toaster-close row-start-1 row-end-2 col-start-3 col-end-4',
       'flex justify-end items-start cursor-pointer',
-      'flex justify-end items-start',
       'h-full w-full outline-none',
       'group/toaster-close',
       className,
