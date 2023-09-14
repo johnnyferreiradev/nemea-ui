@@ -11,8 +11,8 @@ export default function ImagePlaceholder({
       className={twMerge(
         'au-image-placeholder w-max min-w-[80px] min-h-[80px]',
         'relative flex justify-center items-center rounded',
-        'bg-[var(--grayscale-100)] dark:bg-[var(--grayscale-400)]',
-        'text-[var(--grayscale-300)] text-3xl',
+        'bg-grayscale-200 dark:bg-grayscale-800',
+        'text-grayscale-400 dark:text-grayscale-600 text-3xl',
         className,
       )}
     >

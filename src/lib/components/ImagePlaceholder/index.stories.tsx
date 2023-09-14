@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
 
-import Icon from '../Icon';
+import { Image } from '@phosphor-icons/react';
 
 import ImagePlaceholder from './index';
 import { ImagePlaceholderProps } from './types';
@@ -10,7 +10,7 @@ export default {
   component: ImagePlaceholder,
   tags: ['autodocs'],
   args: {
-    children: <Icon name="image-fill" size="2xl" />,
+    children: <Image />,
   },
 } as Meta<ImagePlaceholderProps>;
 
