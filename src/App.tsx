@@ -6,7 +6,7 @@ import { User } from '@phosphor-icons/react';
 
 import { addDarkClassToHtml, removeDarkClassFromHtml } from './utils/darkmode';
 
-import { Switch, Form } from './lib';
+import { Switch, Form, Input, Button } from './lib';
 
 const formSchema = z.object({
   username: z.string().min(2, {
@@ -60,7 +60,7 @@ function App() {
             <Form.Root {...form}>
               <form
                 // onSubmit={form.handleSubmit(onSubmit)}
-                className="space-y-8"
+                className="space-y-8 mb-8"
               >
                 <Form.Field
                   control={form.control}
@@ -80,6 +80,18 @@ function App() {
                 />
               </form>
             </Form.Root>
+
+            <Input
+              placeholder="Placeholder text"
+              icon={<User />}
+              actions={
+                <Button.Root size="xs" theme="linkPrimary">
+                  <Button.Label>Action 1</Button.Label>
+                </Button.Root>
+              }
+              className="mb-8"
+            />
+            <Input disabled />
           </div>
         </div>
       </div>

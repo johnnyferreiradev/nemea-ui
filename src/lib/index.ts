@@ -72,3 +72,6 @@ export { UploadArea };
 
 import Text from './components/Text';
 export { Text };
+
+import Input from './components/Input';
+export { Input };
