@@ -90,8 +90,15 @@ function App() {
                 </Button.Root>
               }
               className="mb-8"
+              theme="dark"
             />
-            <Input disabled />
+            <Input
+              disabled
+              placeholder="Placeholder text"
+              className="mb-8"
+              theme="dark"
+            />
+            <Input disabled value="Meu input" theme="dark" />
           </div>
         </div>
       </div>
