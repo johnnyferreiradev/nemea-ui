@@ -24,9 +24,9 @@ function App() {
 
   const [darkMode, setDarkMode] = useState(false);
 
-  // const onSubmit = (values: z.infer<typeof formSchema>) => {
-  //   console.log(values.username);
-  // };
+  const onSubmit = (values: z.infer<typeof formSchema>) => {
+    console.log(values.username);
+  };
 
   useEffect(() => {
     if (darkMode) {
@@ -59,7 +59,7 @@ function App() {
           <div className="flex-1 w-full max-w-[900px] bg-grayscale-50/50 dark:bg-grayscale-950 rounded-xl p-4">
             <Form.Root {...form}>
               <form
-                // onSubmit={form.handleSubmit(onSubmit)}
+                onSubmit={form.handleSubmit(onSubmit)}
                 className="space-y-8 mb-8"
               >
                 <Form.Field
@@ -68,8 +68,14 @@ function App() {
                   render={({ field }) => (
                     <Form.Item>
                       <Form.Label>Username</Form.Label>
-                      <Form.Control icon={<User />}>
-                        <input placeholder="input" {...field} />
+                      <Form.Control>
+                        <Input
+                          placeholder="Placeholder text"
+                          icon={
+                            <User className="text-primary-300" weight="bold" />
+                          }
+                          {...field}
+                        />
                       </Form.Control>
                       <Form.Description>
                         This is your public display name.
@@ -78,6 +84,9 @@ function App() {
                     </Form.Item>
                   )}
                 />
+                <Button.Root theme="primary" size="xs" type="submit">
+                  <Button.Label>Button</Button.Label>
+                </Button.Root>
               </form>
             </Form.Root>
 
