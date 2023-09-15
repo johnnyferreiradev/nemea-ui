@@ -7,6 +7,7 @@ enum InputThemes {
 }
 
 enum InputSizes {
+  xs = 'xs',
   sm = 'sm',
   md = 'md',
   lg = 'lg',

@@ -81,24 +81,70 @@ function App() {
               </form>
             </Form.Root>
 
-            <Input
-              placeholder="Placeholder text"
-              icon={<User />}
-              actions={
-                <Button.Root size="xs" theme="linkPrimary">
-                  <Button.Label>Action 1</Button.Label>
-                </Button.Root>
-              }
-              className="mb-8"
-              theme="dark"
-            />
-            <Input
-              disabled
-              placeholder="Placeholder text"
-              className="mb-8"
-              theme="dark"
-            />
-            <Input disabled value="Meu input" theme="dark" />
+            <div className="flex gap-1 items-center mb-4">
+              <p className="mr-2">xs</p>
+              <Input
+                placeholder="Placeholder text"
+                icon={<User className="text-primary-300" weight="bold" />}
+                theme="dark"
+                size="xs"
+              />
+              <Button.Root theme="primary" size="xs">
+                <Button.Label>Button</Button.Label>
+              </Button.Root>
+            </div>
+
+            <div className="flex gap-1 items-center mb-4">
+              <p className="mr-2 w-4">sm</p>
+              <Input
+                placeholder="Placeholder text"
+                icon={<User className="text-primary-300" weight="bold" />}
+                theme="dark"
+                size="sm"
+              />
+              <Button.Root theme="primary" size="sm">
+                <Button.Label>Button</Button.Label>
+              </Button.Root>
+            </div>
+
+            <div className="flex gap-1 items-center mb-4">
+              <p className="mr-2 w-4">md</p>
+              <Input
+                placeholder="Placeholder text"
+                icon={<User className="text-primary-300" weight="bold" />}
+                theme="dark"
+                size="md"
+              />
+              <Button.Root theme="primary" size="md">
+                <Button.Label>Button</Button.Label>
+              </Button.Root>
+            </div>
+
+            <div className="flex gap-1 items-center mb-4">
+              <p className="mr-2 w-4">lg</p>
+              <Input
+                placeholder="Placeholder text"
+                icon={<User className="text-primary-300" weight="bold" />}
+                theme="dark"
+                size="lg"
+              />
+              <Button.Root theme="primary" size="lg">
+                <Button.Label>Button</Button.Label>
+              </Button.Root>
+            </div>
+
+            <div className="flex gap-1 items-center mb-4">
+              <p className="mr-2 w-4">xl</p>
+              <Input
+                placeholder="Placeholder text"
+                icon={<User className="text-primary-300" weight="bold" />}
+                theme="dark"
+                size="xl"
+              />
+              <Button.Root theme="primary" size="xl">
+                <Button.Label>Button</Button.Label>
+              </Button.Root>
+            </div>
           </div>
         </div>
       </div>

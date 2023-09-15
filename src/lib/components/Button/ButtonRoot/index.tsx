@@ -12,7 +12,7 @@ const ButtonRoot = forwardRef<HTMLButtonElement, ButtonProps>(
       className = '',
       asChild,
       theme = 'gray',
-      size = 'lg',
+      size = 'md',
       align = 'center',
       children,
       ...rest

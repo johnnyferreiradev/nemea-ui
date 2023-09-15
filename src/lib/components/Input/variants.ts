@@ -41,7 +41,8 @@ export const inputWrapperVatiants = tv({
       ],
     },
     size: {
-      sm: 'p-1',
+      xs: 'p-1',
+      sm: 'px-2 py-2',
       md: 'px-3 py-2',
       lg: 'px-4 py-3',
       xl: 'px-5 py-4',
@@ -68,6 +69,7 @@ export const inputVariants = tv({
       dark: ['text-light dark:text-dark'],
     },
     size: {
+      xs: 'text-xs',
       sm: 'text-sm',
       md: 'text-base',
       lg: 'text-lg',
