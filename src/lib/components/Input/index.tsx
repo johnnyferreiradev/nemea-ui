@@ -11,7 +11,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
       className,
       type,
       size = 'md',
-      theme = 'white',
+      theme = 'light',
       disabled,
       icon,
       actions,

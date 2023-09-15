@@ -1,5 +1,5 @@
 enum InputThemes {
-  white = 'white',
+  light = 'light',
   gray = 'gray',
   noBorder = 'noBorder',
   shadow = 'shadow',

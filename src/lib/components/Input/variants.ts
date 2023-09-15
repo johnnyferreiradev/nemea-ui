@@ -7,7 +7,7 @@ export const inputWrapperVatiants = tv({
   ],
   variants: {
     theme: {
-      white: [
+      light: [
         'bg-light border-grayscale-200 focus-within:border-primary-600',
         'dark:bg-grayscale-950 dark:border-grayscale-700 dark:focus-within:border-primary-500',
         '[&.is-disabled]:bg-grayscale-50 [&.is-disabled]:border-grayscale-200',
@@ -60,7 +60,7 @@ export const inputVariants = tv({
   ],
   variants: {
     theme: {
-      white: ['text-dark dark:text-light'],
+      light: ['text-dark dark:text-light'],
       gray: [
         'text-dark dark:text-light dark:disabled:placeholder-grayscale-600',
       ],
