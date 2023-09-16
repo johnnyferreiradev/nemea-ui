@@ -75,3 +75,6 @@ export { Text };
 
 import Input from './components/Input';
 export { Input };
+
+import Textarea from './components/Textarea';
+export { Textarea };
