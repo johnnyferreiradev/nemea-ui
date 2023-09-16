@@ -28,7 +28,7 @@ export default {
             </Button.Root>
           </AlertDialog.Cancel>
           <AlertDialog.Action>
-            <Button.Root theme="outlineDanger" onClick={() => undefined}>
+            <Button.Root theme="outlineFailure" onClick={() => undefined}>
               <Button.Label>Continuar</Button.Label>
             </Button.Root>
           </AlertDialog.Action>
@@ -99,7 +99,7 @@ export const WithScroll: StoryObj<AlertDialogRootProps> = {
             </Button.Root>
           </AlertDialog.Cancel>
           <AlertDialog.Action>
-            <Button.Root theme="outlineDanger">
+            <Button.Root theme="outlineFailure">
               <Button.Label>Excluir</Button.Label>
             </Button.Root>
           </AlertDialog.Action>

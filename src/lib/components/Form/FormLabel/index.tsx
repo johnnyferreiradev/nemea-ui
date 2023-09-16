@@ -17,8 +17,8 @@ const FormLabel = forwardRef<
       ref={ref}
       className={twMerge(
         error && 'text-destructive',
-        'au-form-label text-sm block mb-[6px] leading-4',
-        'text-grayscale-400',
+        'au-form-label text-sm block leading-4',
+        'text-grayscale-500 dark:text-grayscale-200',
         className,
       )}
       htmlFor={formItemId}

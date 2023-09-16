@@ -21,7 +21,7 @@ export default function ModalCloseButton({
     >
       <Button.Root
         size="xs"
-        theme="linkGrayPrimary"
+        theme="linkGray"
         className="rounded-full w-10 h-10 shadow-md bg-[var(--white-color)] dark:bg-[var(--grayscale-400)]"
       >
         <Button.Label>

@@ -20,7 +20,7 @@ const FormMessage = forwardRef<
       id={formMessageId}
       className={twMerge(
         'form-message text-sm block mt-[6px] leading-4',
-        'text-[var(--danger-color)]',
+        'text-failure-500',
         className,
       )}
       {...props}

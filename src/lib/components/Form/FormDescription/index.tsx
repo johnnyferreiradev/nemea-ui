@@ -13,7 +13,10 @@ const FormDescription = forwardRef<
     <p
       ref={ref}
       id={formDescriptionId}
-      className={twMerge('am-form-description', className)}
+      className={twMerge(
+        'am-form-description text-sm text-grayscale-500 dark:text-grayscale-200',
+        className,
+      )}
       {...props}
     />
   );

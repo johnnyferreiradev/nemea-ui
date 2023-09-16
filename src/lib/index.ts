@@ -6,8 +6,6 @@ export { Button } from './components/Button';
 
 export { Alert } from './components/Alert';
 
-export { AppLoader } from './components/AppLoader';
-
 export { Avatar } from './components/Avatar';
 
 import Image from './components/Image';

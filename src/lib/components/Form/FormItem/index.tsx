@@ -14,7 +14,7 @@ const FormItem = forwardRef<
     <FormItemContext.Provider value={{ id }}>
       <div
         ref={ref}
-        className={twMerge('am-form-item space-y-2', className)}
+        className={twMerge('am-form-item space-y-1', className)}
         {...props}
       />
     </FormItemContext.Provider>
