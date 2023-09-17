@@ -14,8 +14,8 @@ export default function DropdownRadioItem({
   return (
     <DropdownMenu.RadioItem
       className={twMerge(
-        'au-dropdown-radio-item au-item w-full py-3 px-4 pr-5 mb-[1px]',
-        'text-lg text-start transition rounded-none',
+        'au-dropdown-radio-item au-item w-full py-2 px-3',
+        'text-base text-start transition rounded-md',
         'outline-none cursor-pointer flex items-center gap-1',
         'data-[disabled]:cursor-default',
         className,

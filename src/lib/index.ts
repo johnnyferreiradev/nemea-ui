@@ -8,11 +8,9 @@ export { Alert } from './components/Alert';
 
 export { Avatar } from './components/Avatar';
 
-import Image from './components/Image';
-export { Image };
+export { default as Image } from './components/Image';
 
-import ImagePlaceholder from './components/ImagePlaceholder';
-export { ImagePlaceholder };
+export { default as ImagePlaceholder } from './components/ImagePlaceholder';
 
 export { Toaster } from './components/Toaster';
 
@@ -22,7 +20,7 @@ export { Form } from './components/Form';
 
 export { Select } from './components/Select';
 
-export { Checkbox } from './components/Checkbox';
+export { default as Checkbox } from './components/Checkbox';
 
 export { Switch } from './components/Switch';
 
@@ -30,8 +28,7 @@ export { RadioGroup } from './components/RadioGroup';
 
 export { Modal } from './components/Modal';
 
-import Loader from './components/Loader';
-export { Loader };
+export { default as Loader } from './components/Loader';
 
 export { AlertDialog } from './components/AlertDialog';
 
@@ -43,8 +40,7 @@ export { PageLoader } from './components/PageLoader';
 
 export { Popover } from './components/Popover';
 
-import Label from './components/Label';
-export { Label };
+export { default as Label } from './components/Label';
 
 export { Tooltip } from './components/Tooltip';
 
@@ -52,27 +48,20 @@ export { Progress } from './components/Progress';
 
 export { Tabs } from './components/Tabs';
 
-import Separator from './components/Separator';
-export { Separator };
+export { default as Separator } from './components/Separator';
 
-import Skeleton from './components/Skeleton';
-export { Skeleton };
+export { default as Skeleton } from './components/Skeleton';
 
-import Badge from './components/Badge';
-export { Badge };
+export { default as Badge } from './components/Badge';
 
 export { Range } from './components/Range';
 
 export { Table } from './components/Table';
 
-import UploadArea from './components/UploadArea';
-export { UploadArea };
+export { default as UploadArea } from './components/UploadArea';
 
-import Text from './components/Text';
-export { Text };
+export { default as Text } from './components/Text';
 
-import Input from './components/Input';
-export { Input };
+export { default as Input } from './components/Input';
 
-import Textarea from './components/Textarea';
-export { Textarea };
+export { default as Textarea } from './components/Textarea';

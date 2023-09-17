@@ -5,6 +5,7 @@ import DropdownSeparator from './DropdownSeparator';
 import DropdownCheckboxItem from './DropdownCheckboxItem';
 import DropdownRadioGroup from './DropdownRadioGroup';
 import DropdownRadioItem from './DropdownRadioItem';
+import DropdownArrow from './DropdownArrow';
 
 export const Dropdown = {
   Root: DropdownRoot,
@@ -14,4 +15,5 @@ export const Dropdown = {
   CheckboxItem: DropdownCheckboxItem,
   RadioGroup: DropdownRadioGroup,
   RadioItem: DropdownRadioItem,
+  Arrow: DropdownArrow,
 };

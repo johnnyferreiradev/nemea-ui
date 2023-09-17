@@ -8,11 +8,7 @@ export default function DropdownSeparator({
 }: DropdownSeparatorProps) {
   return (
     <DropdownMenu.Separator
-      className={twMerge(
-        'au-dropdown-separator w-full h-8 bg-[var(--white-color)]',
-        'dark:bg-[var(--grayscale-400)]',
-        className,
-      )}
+      className={twMerge('au-dropdown-separator w-full h-0.5', className)}
     />
   );
 }

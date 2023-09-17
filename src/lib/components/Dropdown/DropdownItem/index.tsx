@@ -12,9 +12,9 @@ export default function DropdownItem({
   return (
     <DropdownMenu.Item
       className={twMerge(
-        'au-dropdown-item au-item w-full py-3 px-4 pr-5 mb-[1px]',
-        'outline-none cursor-pointer transition rounded-none',
-        'text-lg text-start',
+        'au-dropdown-item au-item w-full py-2 px-3',
+        'outline-none cursor-pointer transition rounded-md',
+        'text-base text-start',
         'data-[disabled]:cursor-default',
         className,
       )}

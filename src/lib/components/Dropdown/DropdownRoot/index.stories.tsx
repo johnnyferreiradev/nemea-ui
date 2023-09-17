@@ -12,6 +12,7 @@ export default {
   args: {
     children: (
       <>
+        <Dropdown.Arrow />
         <Dropdown.Item>Item 1</Dropdown.Item>
         <Dropdown.Separator />
         <Dropdown.Item disabled>Item 2</Dropdown.Item>

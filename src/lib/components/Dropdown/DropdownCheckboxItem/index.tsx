@@ -15,8 +15,8 @@ export default function DropdownCheckboxItem({
   return (
     <DropdownMenu.CheckboxItem
       className={twMerge(
-        'au-dropdown-checkbox-item au-item w-full py-3 px-4 pr-5 mb-[1px]',
-        'text-lg text-start transition rounded-none',
+        'au-dropdown-checkbox-item au-item w-full py-2 px-3',
+        'text-base text-start transition rounded-md',
         'outline-none cursor-pointer flex items-center gap-1',
         'data-[disabled]:cursor-default',
         className,

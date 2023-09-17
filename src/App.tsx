@@ -6,7 +6,7 @@ import { User } from '@phosphor-icons/react';
 
 import { addDarkClassToHtml, removeDarkClassFromHtml } from './utils/darkmode';
 
-import { Switch, Form, Input, Button } from './lib';
+import { Switch, Form, Input, Button, Dropdown } from './lib';
 
 const formSchema = z.object({
   username: z.string().min(2, {
@@ -24,8 +24,8 @@ function App() {
 
   const [darkMode, setDarkMode] = useState(false);
 
-  const onSubmit = (values: z.infer<typeof formSchema>) => {
-    console.log(values.username);
+  const onSubmit = () => {
+    //  code...
   };
 
   useEffect(() => {
@@ -89,6 +89,18 @@ function App() {
                 </Button.Root>
               </form>
             </Form.Root>
+
+            <Dropdown.Root
+              trigger={
+                <Button.Root>
+                  <Button.Label>Dropdown</Button.Label>
+                </Button.Root>
+              }
+            >
+              <Dropdown.Item>Opção 1</Dropdown.Item>
+              <Dropdown.Item>Opção 1</Dropdown.Item>
+              <Dropdown.Item>Opção 1</Dropdown.Item>
+            </Dropdown.Root>
 
             <div className="flex gap-1 items-center mb-4">
               <p className="mr-2">xs</p>
