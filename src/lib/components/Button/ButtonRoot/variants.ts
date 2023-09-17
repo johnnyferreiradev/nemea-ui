@@ -5,7 +5,7 @@ export const buttonVariants = tv({
     'au-button outline-grayscale-200 dark:outline-grayscale-600',
     'relative box-border cursor-pointer border-none',
     'transition duration-200 ease-in-out',
-    'rounded text-sm font-semibold decoration-0',
+    'rounded-md text-sm font-semibold decoration-0',
     'flex items-center text-center',
     'disabled:opacity-30 disabled:pointer-events-none',
   ],

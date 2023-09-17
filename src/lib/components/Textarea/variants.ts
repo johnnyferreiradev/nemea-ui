@@ -2,7 +2,7 @@ import { tv } from 'tailwind-variants';
 
 export const textareaWrapperVatiants = tv({
   base: [
-    'am-textarea-wrapper flex items-start rounded border',
+    'am-textarea-wrapper flex items-start rounded-md border',
     '[&:has([aria-invalid="true"])]:border-failure-400',
   ],
   variants: {

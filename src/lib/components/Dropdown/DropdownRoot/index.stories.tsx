@@ -19,7 +19,7 @@ export default {
         <Dropdown.Item>Item 3</Dropdown.Item>
         <Dropdown.Label>Checkboxes</Dropdown.Label>
         <Dropdown.CheckboxItem checked>Option 1</Dropdown.CheckboxItem>
-        <Dropdown.CheckboxItem checked>Option 2</Dropdown.CheckboxItem>
+        <Dropdown.CheckboxItem>Option 2</Dropdown.CheckboxItem>
         <Dropdown.Separator />
         <Dropdown.Label>Checkboxes</Dropdown.Label>
         <Dropdown.RadioGroup value="op1">
