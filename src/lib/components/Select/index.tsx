@@ -1,23 +1,24 @@
-import SelectRoot from './SelectRoot';
-import SelectScrollUpButton from './SelectScrollUpButton';
-import SelectScrollDownButton from './SelectScrollDownButton';
-import SelectViewport from './SelectViewport';
+import * as RadixSelect from '@radix-ui/react-select';
+
 import SelectItem from './SelectItem';
-import SelectItemText from './SelectItemText';
-import SelectItemIndicator from './SelectItemIndicator';
 import SelectLabel from './SelectLabel';
 import SelectSeparator from './SelectSeparator';
-import SelectGroup from './SelectGroup';
+import SelectContent from './SelectContent';
+import SelectTrigger from './SelectTrigger';
+
+const SelectRoot = RadixSelect.Root;
+
+const SelectGroup = RadixSelect.Group;
+
+const SelectValue = RadixSelect.Value;
 
 export const Select = {
   Root: SelectRoot,
-  ScrollUpButton: SelectScrollUpButton,
-  ScrollDownButton: SelectScrollDownButton,
-  Viewport: SelectViewport,
+  Trigger: SelectTrigger,
+  Content: SelectContent,
   Item: SelectItem,
-  ItemText: SelectItemText,
-  ItemIndicator: SelectItemIndicator,
   Label: SelectLabel,
   Separator: SelectSeparator,
   Group: SelectGroup,
+  Value: SelectValue,
 };

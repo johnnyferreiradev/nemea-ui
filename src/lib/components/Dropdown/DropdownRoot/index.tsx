@@ -10,7 +10,7 @@ export default function DropdownRoot({
   trigger,
   triggerAsChild,
   className = '',
-  theme = 'white',
+  theme = 'light',
 }: DropdownProps) {
   return (
     <DropdownMenu.Root>

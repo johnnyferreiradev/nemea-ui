@@ -1,5 +1,5 @@
 enum DropdownThemes {
-  white = 'white',
+  light = 'light',
   dark = 'dark',
 }
 
