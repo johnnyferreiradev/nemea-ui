@@ -19,7 +19,7 @@ const SelectTrigger = forwardRef<
   >
     {children}
     <RadixSelect.Icon asChild>
-      <CaretDown className="h-4 w-4 opacity-50" />
+      <CaretDown className="h-4 w-4 opacity-50 ml-2" />
     </RadixSelect.Icon>
   </RadixSelect.Trigger>
 ));
