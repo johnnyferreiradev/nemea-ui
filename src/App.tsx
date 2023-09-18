@@ -6,7 +6,7 @@ import { User } from '@phosphor-icons/react';
 
 import { addDarkClassToHtml, removeDarkClassFromHtml } from './utils/darkmode';
 
-import { Switch, Form, Input, Button, Dropdown } from './lib';
+import { Switch, Form, Input, Button, Dropdown, Calendar } from './lib';
 
 const formSchema = z.object({
   username: z.string().min(2, {
@@ -57,6 +57,24 @@ function App() {
           </h1>
 
           <div className="flex-1 w-full max-w-[900px] bg-grayscale-50/50 dark:bg-grayscale-950 rounded-xl p-4">
+            <Calendar
+              className="bg-light mb-8"
+              mode="single"
+              disabled={new Date()}
+            />
+            <Calendar
+              className="bg-light mb-8"
+              mode="range"
+              numberOfMonths={2}
+            />
+            <Calendar className="bg-light mb-8" mode="multiple" />
+
+            <Calendar
+              className="bg-light mb-8"
+              mode="default"
+              numberOfMonths={2}
+            />
+
             <Form.Root {...form}>
               <form
                 onSubmit={form.handleSubmit(onSubmit)}

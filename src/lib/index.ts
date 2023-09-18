@@ -65,3 +65,5 @@ export { default as Text } from './components/Text';
 export { default as Input } from './components/Input';
 
 export { default as Textarea } from './components/Textarea';
+
+export { default as Calendar } from './components/Calendar';
