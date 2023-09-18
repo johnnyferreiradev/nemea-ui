@@ -1,30 +1,31 @@
+import { forwardRef } from 'react';
 import * as RadixPopover from '@radix-ui/react-popover';
 
 import { popoverContentVariants } from './variants';
 
 import { PopoverContentProps } from './types';
 
-export default function PopoverContent({
-  className = '',
-  id,
-  children,
-  theme = 'white',
-  side = 'bottom',
-  ...rest
-}: PopoverContentProps) {
-  return (
+const PopoverContent = forwardRef<
+  React.ElementRef<typeof RadixPopover.Content>,
+  React.ComponentPropsWithoutRef<typeof RadixPopover.Content> &
+    PopoverContentProps
+>(
+  (
+    { className, align = 'center', sideOffset = 4, theme = 'light', ...props },
+    ref,
+  ) => (
     <RadixPopover.Portal>
       <RadixPopover.Content
+        ref={ref}
+        align={align}
+        sideOffset={sideOffset}
         className={popoverContentVariants({ theme, className })}
-        id={id}
-        avoidCollisions
-        sideOffset={5}
-        collisionPadding={8}
-        side={side}
-        {...rest}
-      >
-        {children}
-      </RadixPopover.Content>
+        {...props}
+      />
     </RadixPopover.Portal>
-  );
-}
+  ),
+);
+
+PopoverContent.displayName = RadixPopover.Content.displayName;
+
+export default PopoverContent;

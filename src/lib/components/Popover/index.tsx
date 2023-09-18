@@ -1,9 +1,15 @@
-import PopoverRoot from './PopoverRoot';
-import PopoverClose from './PopoverClose';
-import PopoverAnchor from './PopoverAnchor';
+import * as PopoverPrimitive from '@radix-ui/react-popover';
+
 import PopoverContent from './PopoverContent';
-import PopoverTrigger from './PopoverTrigger';
-import PopoverArrow from './PopoverArrow';
+import PopoverClose from './PopoverClose';
+
+const PopoverRoot = PopoverPrimitive.Root;
+
+const PopoverTrigger = PopoverPrimitive.Trigger;
+
+const PopoverAnchor = PopoverPrimitive.Anchor;
+
+const PopoverArrow = PopoverPrimitive.Arrow;
 
 export const Popover = {
   Root: PopoverRoot,
