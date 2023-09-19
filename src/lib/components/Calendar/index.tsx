@@ -2,7 +2,7 @@ import { twMerge } from 'tailwind-merge';
 import { DayPicker } from 'react-day-picker';
 import { CaretRight, CaretLeft } from '@phosphor-icons/react';
 
-export type CalendarProps = React.ComponentProps<typeof DayPicker>;
+import { CalendarProps } from './types';
 
 function Calendar({
   className,
