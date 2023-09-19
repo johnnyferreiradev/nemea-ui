@@ -3,7 +3,6 @@ import { Meta, StoryObj } from '@storybook/react';
 import Label from '../../Label';
 
 import { RadioGroup } from '../index';
-import { RadioGroupRootProps } from './types';
 
 export default {
   title: 'Components/RadioGroup/RadioGroupRoot',
@@ -13,17 +12,13 @@ export default {
     children: (
       <>
         <div className="flex items-center gap-2">
-          <RadioGroup.Item value="comfortable" id="r1">
-            <RadioGroup.Indicator />
-          </RadioGroup.Item>
+          <RadioGroup.Item value="comfortable" id="r1" />
           <Label color="grayscale100" htmlFor="r1">
             Comfortable
           </Label>
         </div>
         <div className="flex items-center gap-2">
-          <RadioGroup.Item value="compact" id="r2">
-            <RadioGroup.Indicator />
-          </RadioGroup.Item>
+          <RadioGroup.Item value="compact" id="r2" />
           <Label color="grayscale100" htmlFor="r2">
             Compact
           </Label>
@@ -31,6 +26,6 @@ export default {
       </>
     ),
   },
-} as Meta<RadioGroupRootProps>;
+} as Meta;
 
-export const Default: StoryObj<RadioGroupRootProps> = {};
+export const Default: StoryObj = {};

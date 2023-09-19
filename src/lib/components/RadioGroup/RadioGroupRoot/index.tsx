@@ -1,41 +1,21 @@
-import * as RadioGroup from '@radix-ui/react-radio-group';
-import { twMerge } from 'tailwind-merge';
+import { forwardRef } from 'react';
+import * as RadixRadioGroup from '@radix-ui/react-radio-group';
 
 import { radioGroupRootVariants } from './variants';
 
-import { RadioGroupRootProps } from './types';
-
-export default function RadioGroupRoot({
-  className = '',
-  asChild,
-  defaultValue,
-  value,
-  onValueChange,
-  disabled = false,
-  required = false,
-  name,
-  orientation = 'vertical',
-  dir = 'ltr',
-  loop,
-  children,
-  ...rest
-}: RadioGroupRootProps) {
+const RadioGroupRoot = forwardRef<
+  React.ElementRef<typeof RadixRadioGroup.Root>,
+  React.ComponentPropsWithoutRef<typeof RadixRadioGroup.Root>
+>(({ className, orientation = 'vertical', ...props }, ref) => {
   return (
-    <RadioGroup.Root
-      className={twMerge(radioGroupRootVariants({ orientation }), className)}
-      asChild={asChild}
-      defaultValue={defaultValue}
-      value={value}
-      onValueChange={onValueChange}
-      disabled={disabled}
-      required={required}
-      name={name}
-      orientation={orientation}
-      dir={dir}
-      loop={loop}
-      {...rest}
-    >
-      {children}
-    </RadioGroup.Root>
+    <RadixRadioGroup.Root
+      className={radioGroupRootVariants({ orientation, className })}
+      {...props}
+      ref={ref}
+    />
   );
-}
+});
+
+RadioGroupRoot.displayName = RadixRadioGroup.Root.displayName;
+
+export default RadioGroupRoot;

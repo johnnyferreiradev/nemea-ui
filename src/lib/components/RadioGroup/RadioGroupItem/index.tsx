@@ -1,30 +1,28 @@
+import { forwardRef } from 'react';
 import * as RadioGroup from '@radix-ui/react-radio-group';
-import { twMerge } from 'tailwind-merge';
+import { Circle } from '@phosphor-icons/react';
 
 import { radioGroupItemVariants } from './variants';
 
 import { RadioGroupItemProps } from './types';
 
-export default function RadioGroupItem({
-  className = '',
-  theme = 'primary',
-  asChild,
-  value,
-  disabled = false,
-  required = false,
-  children,
-  ...rest
-}: RadioGroupItemProps) {
+const RadioGroupItem = forwardRef<
+  React.ElementRef<typeof RadioGroup.Item>,
+  React.ComponentPropsWithoutRef<typeof RadioGroup.Item> & RadioGroupItemProps
+>(({ className, theme = 'primary', ...props }, ref) => {
   return (
     <RadioGroup.Item
-      asChild={asChild}
-      className={twMerge(radioGroupItemVariants({ theme }), className)}
-      value={value}
-      disabled={disabled}
-      required={required}
-      {...rest}
+      ref={ref}
+      className={radioGroupItemVariants({ theme, className })}
+      {...props}
     >
-      {children}
+      <RadioGroup.Indicator className="flex items-center justify-center">
+        <Circle className="h-2.5 w-2.5 text-light" weight="fill" />
+      </RadioGroup.Indicator>
     </RadioGroup.Item>
   );
-}
+});
+
+RadioGroupItem.displayName = RadioGroup.Item.displayName;
+
+export default RadioGroupItem;
