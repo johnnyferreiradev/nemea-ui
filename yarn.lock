@@ -1624,7 +1624,7 @@
     picocolors "^1.0.0"
     tslib "^2.6.0"
 
-"@popperjs/core@^2.11.8", "@popperjs/core@^2.9.2":
+"@popperjs/core@^2.9.2":
   version "2.11.8"
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.8.tgz#6b79032e760a0899cd4204710beede972a3a185f"
   integrity sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==
@@ -4319,18 +4319,6 @@ ci-info@^3.2.0:
   resolved "https://registry.npmjs.org/ci-info/-/ci-info-3.8.0.tgz"
   integrity sha512-eXTggHWSooYhq49F2opQhuHWgzucfF2YgODK4e1566GQs5BIfP30B0oenwBJHfWxAs2fyPB1s7Mg949zLf61Yw==
 
-class-variance-authority@^0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/class-variance-authority/-/class-variance-authority-0.7.0.tgz#1c3134d634d80271b1837452b06d821915954522"
-  integrity sha512-jFI8IQw4hczaL4ALINxqLEXQbWcNjoSkloa4IaufXCJr6QawJyw7tuRysRsrE8w2p/4gGaxKIt/hX3qz/IbD1A==
-  dependencies:
-    clsx "2.0.0"
-
-classnames@^2.2.6:
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.2.tgz#351d813bf0137fcc6a76a16b88208d2560a0d924"
-  integrity sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==
-
 clean-stack@^2.0.0:
   version "2.2.0"
   resolved "https://registry.npmjs.org/clean-stack/-/clean-stack-2.2.0.tgz"
@@ -4404,11 +4392,6 @@ clone@^1.0.2:
   version "1.0.4"
   resolved "https://registry.npmjs.org/clone/-/clone-1.0.4.tgz"
   integrity sha512-JQHZ2QMW6l3aH/j6xCqQThY/9OH4D/9ls34cgkUBiEeocRTU04tHfKPBsUK1PqZCUQM7GiA0IIXJSuXHI64Kbg==
-
-clsx@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/clsx/-/clsx-2.0.0.tgz#12658f3fd98fafe62075595a5c30e43d18f3d00b"
-  integrity sha512-rQ1+kcj+ttHG0MKVGBUXwayCCF1oh39BF5COIpRzuCEv8Mwjv0XucrI2ExNTOn9IlLifGClWQcU9BrZORvtw6Q==
 
 color-convert@^1.9.0:
   version "1.9.3"
@@ -4609,11 +4592,6 @@ date-fns@^2.0.1, date-fns@^2.30.0:
   integrity sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw==
   dependencies:
     "@babel/runtime" "^7.21.0"
-
-dayjs@^1.11.9:
-  version "1.11.9"
-  resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.11.9.tgz#9ca491933fadd0a60a2c19f6c237c03517d71d1a"
-  integrity sha512-QvzAURSbQ0pKdIye2txOzNaHmxtUBXerpY0FJsFXUMKbIZeFm5ht1LS/jFsrncjnmtv8HsG0W2g6c0zUjZWmpA==
 
 de-indent@^1.0.2:
   version "1.0.2"
@@ -7895,18 +7873,6 @@ react-confetti@^6.1.0:
   dependencies:
     tween-functions "^1.2.0"
 
-react-datepicker@^4.16.0:
-  version "4.16.0"
-  resolved "https://registry.yarnpkg.com/react-datepicker/-/react-datepicker-4.16.0.tgz#b9dd389bb5611a1acc514bba1dd944be21dd877f"
-  integrity sha512-hNQ0PAg/LQoVbDUO/RWAdm/RYmPhN3cz7LuQ3hqbs24OSp69QCiKOJRrQ4jk1gv1jNR5oYu8SjjgfDh8q6Q1yw==
-  dependencies:
-    "@popperjs/core" "^2.11.8"
-    classnames "^2.2.6"
-    date-fns "^2.30.0"
-    prop-types "^15.7.2"
-    react-onclickoutside "^6.12.2"
-    react-popper "^2.3.0"
-
 react-day-picker@^8.8.2:
   version "8.8.2"
   resolved "https://registry.yarnpkg.com/react-day-picker/-/react-day-picker-8.8.2.tgz#1f778ad73fecf44105d2a02f5d15ec0eaa1afcc1"
@@ -8002,11 +7968,6 @@ react-loading@^2.0.3:
   resolved "https://registry.yarnpkg.com/react-loading/-/react-loading-2.0.3.tgz#e8138fb0c3e4674e481b320802ac7048ae14ffb9"
   integrity sha512-Vdqy79zq+bpeWJqC+xjltUjuGApyoItPgL0vgVfcJHhqwU7bAMKzysfGW/ADu6i0z0JiOCRJjo+IkFNkRNbA3A==
 
-react-onclickoutside@^6.12.2:
-  version "6.13.0"
-  resolved "https://registry.yarnpkg.com/react-onclickoutside/-/react-onclickoutside-6.13.0.tgz#e165ea4e5157f3da94f4376a3ab3e22a565f4ffc"
-  integrity sha512-ty8So6tcUpIb+ZE+1HAhbLROvAIJYyJe/1vRrrcmW+jLsaM+/powDRqxzo6hSh9CuRZGSL1Q8mvcF5WRD93a0A==
-
 react-paginate@^8.2.0:
   version "8.2.0"
   resolved "https://registry.yarnpkg.com/react-paginate/-/react-paginate-8.2.0.tgz#947c3dcb444a6c16c1bcf8361871aa135baa3dcd"
@@ -8014,7 +7975,7 @@ react-paginate@^8.2.0:
   dependencies:
     prop-types "^15"
 
-react-popper@^2.2.5, react-popper@^2.3.0:
+react-popper@^2.2.5:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/react-popper/-/react-popper-2.3.0.tgz#17891c620e1320dce318bad9fede46a5f71c70ba"
   integrity sha512-e1hj8lL3uM+sgSR4Lxzn5h1GxBlpa4CQz0XLF8kx4MDrDRWY0Ena4c97PUeSX9i5W3UAfDP0z0FXCTQkoXUl3Q==
