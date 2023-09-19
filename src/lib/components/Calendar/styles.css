@@ -1,0 +1,9 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  td [aria-selected='true'] {
+    background-color: red !important;
+  }
+} */

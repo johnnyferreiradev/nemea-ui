@@ -57,23 +57,11 @@ function App() {
           </h1>
 
           <div className="flex-1 w-full max-w-[900px] bg-grayscale-50/50 dark:bg-grayscale-950 rounded-xl p-4">
-            <Calendar
-              className="bg-light mb-8"
-              mode="single"
-              disabled={new Date()}
-            />
-            <Calendar
-              className="bg-light mb-8"
-              mode="range"
-              numberOfMonths={2}
-            />
-            <Calendar className="bg-light mb-8" mode="multiple" />
+            <Calendar className="mb-8" mode="single" disabled={new Date()} />
+            <Calendar className="mb-8" mode="range" numberOfMonths={2} />
+            <Calendar className="mb-8" mode="multiple" />
 
-            <Calendar
-              className="bg-light mb-8"
-              mode="default"
-              numberOfMonths={2}
-            />
+            <Calendar className="mb-8" mode="default" numberOfMonths={2} />
 
             <Form.Root {...form}>
               <form
