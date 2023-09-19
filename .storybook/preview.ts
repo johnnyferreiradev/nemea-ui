@@ -1,7 +1,6 @@
 import type { Preview } from '@storybook/react';
-import { themes } from '@storybook/theming';
+// import { themes } from '@storybook/theming';
 
-import 'react-datepicker/dist/react-datepicker.css'; // Required by DatePicker
 import '../src/index.css';
 
 const preview: Preview = {

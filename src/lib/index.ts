@@ -22,7 +22,7 @@ export { Select } from './components/Select';
 
 export { default as Checkbox } from './components/Checkbox';
 
-export { Switch } from './components/Switch';
+export { default as Switch } from './components/Switch';
 
 export { RadioGroup } from './components/RadioGroup';
 
