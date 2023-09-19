@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
 
-import Icon from '../../Icon';
+import { Warning } from '@phosphor-icons/react';
 
 import { Toaster } from '../index';
 import { ToasterTitleProps } from './types';
@@ -17,7 +17,7 @@ export default {
     (Story) => (
       <Toaster.Root open>
         <Toaster.Icon>
-          <Icon name="alert" />
+          <Warning />
         </Toaster.Icon>
         <Toaster.Content>
           {Story()}

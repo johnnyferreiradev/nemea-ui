@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
 
-import Icon from '../Icon';
+import { CaretLeft, CaretRight } from '@phosphor-icons/react';
 
 import PaginationControl from './index';
 import { PaginationControlProps } from './types';
@@ -11,8 +11,8 @@ export default {
   tags: ['autodocs'],
   args: {
     pageCount: 10,
-    previousLabel: <Icon name="arrow-left-s-line" />,
-    nextLabel: <Icon name="arrow-right-s-line" />,
+    previousLabel: <CaretLeft />,
+    nextLabel: <CaretRight />,
   },
 } as Meta<PaginationControlProps>;
 

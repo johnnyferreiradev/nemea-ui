@@ -3,13 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-  /* Icons font family */
-  @font-face {
-    font-family: 'Icons';
-    src: url('./lib/assets/fonts/Icons/Icons.ttf') format('truetype');
-    font-style: normal;
-  }
-
   *:focus {
     @apply outline outline-2 outline-grayscale-300 rounded;
   }

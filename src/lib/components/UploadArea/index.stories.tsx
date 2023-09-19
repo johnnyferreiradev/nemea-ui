@@ -1,9 +1,10 @@
 import { Meta, StoryObj } from '@storybook/react';
 
+import { Upload } from '@phosphor-icons/react';
+
 import UploadArea from './index';
 import { UploadAreaProps } from './types';
 
-import Icon from '../Icon';
 import Text from '../Text';
 
 export default {
@@ -14,10 +15,7 @@ export default {
     children: (
       <div>
         <div className="w-[52px] h-[52px] bg-[var(--gray-color)] dark:bg-[var(--primary-color)] rounded-[12px] flex items-center justify-center mx-auto group-data-[overed=true]:bg-[var(--primary-color)] dark:group-data-[overed=true]:bg-[var(--gray-color)]">
-          <Icon
-            name="upload-cloud"
-            className="text-[var(--dark-color)] dark:text-[var(--white-color)] group-data-[overed=true]:text-[var(--white-color)] dark:group-data-[overed=true]:text-[var(--primary-color)]"
-          />
+          <Upload />
         </div>
         <Text
           element="h6"

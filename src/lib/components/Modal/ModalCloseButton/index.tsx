@@ -1,8 +1,9 @@
 import { twMerge } from 'tailwind-merge';
 import * as Dialog from '@radix-ui/react-dialog';
 
+import { X } from '@phosphor-icons/react';
+
 import { Button } from '../../Button';
-import Icon from '../../Icon';
 
 import { ModalCloseButtonProps } from './types';
 
@@ -25,7 +26,7 @@ export default function ModalCloseButton({
         className="rounded-full w-10 h-10 shadow-md bg-[var(--white-color)] dark:bg-[var(--grayscale-400)]"
       >
         <Button.Label>
-          <Icon name="close" size="2xl" />
+          <X />
         </Button.Label>
       </Button.Root>
     </Dialog.Close>
