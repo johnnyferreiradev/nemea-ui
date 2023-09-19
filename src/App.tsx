@@ -4,9 +4,19 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import { User } from '@phosphor-icons/react';
 
+import ptBR from 'date-fns/locale/pt-BR';
+
 import { addDarkClassToHtml, removeDarkClassFromHtml } from './utils/darkmode';
 
-import { Switch, Form, Input, Button, Dropdown, Calendar } from './lib';
+import {
+  Switch,
+  Form,
+  Input,
+  Button,
+  Dropdown,
+  Calendar,
+  DateRange,
+} from './lib';
 
 const formSchema = z.object({
   username: z.string().min(2, {
@@ -23,6 +33,9 @@ function App() {
   });
 
   const [darkMode, setDarkMode] = useState(false);
+  const [date, setDate] = useState<Date>();
+  const [dateRange, setDateRange] = useState<DateRange>();
+  const [dateMultiple, setDateMultiple] = useState<Date[]>();
 
   const onSubmit = () => {
     //  code...
@@ -57,9 +70,29 @@ function App() {
           </h1>
 
           <div className="flex-1 w-full max-w-[900px] bg-grayscale-50/50 dark:bg-grayscale-950 rounded-xl p-4">
-            <Calendar className="mb-8" mode="single" disabled={new Date()} />
-            <Calendar className="mb-8" mode="range" numberOfMonths={2} />
-            <Calendar className="mb-8" mode="multiple" />
+            <Calendar
+              className="mb-8"
+              mode="single"
+              disabled={new Date()}
+              selected={date}
+              onSelect={setDate}
+              locale={ptBR}
+            />
+            <Calendar
+              className="mb-8"
+              mode="range"
+              selected={dateRange}
+              onSelect={(dates) => setDateRange(dates)}
+              numberOfMonths={2}
+              locale={ptBR}
+            />
+            <Calendar
+              className="mb-8"
+              mode="multiple"
+              selected={dateMultiple}
+              onSelect={(dates) => setDateMultiple(dates)}
+              locale={ptBR}
+            />
 
             <Calendar className="mb-8" mode="default" numberOfMonths={2} />
 

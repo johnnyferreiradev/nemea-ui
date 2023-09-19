@@ -67,3 +67,4 @@ export { default as Input } from './components/Input';
 export { default as Textarea } from './components/Textarea';
 
 export { default as Calendar } from './components/Calendar';
+export type { DateRange } from './components/Calendar/types';

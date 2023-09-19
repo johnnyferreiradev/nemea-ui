@@ -1,9 +1,6 @@
-import { useState } from 'react';
 import { twMerge } from 'tailwind-merge';
 import { DayPicker } from 'react-day-picker';
 import { CaretRight, CaretLeft } from '@phosphor-icons/react';
-
-import './styles.css';
 
 export type CalendarProps = React.ComponentProps<typeof DayPicker>;
 
@@ -13,12 +10,8 @@ function Calendar({
   showOutsideDays = true,
   ...props
 }: CalendarProps) {
-  const [date, setDate] = useState<Date>();
-
   return (
     <DayPicker
-      selected={date}
-      onSelect={setDate}
       showOutsideDays={showOutsideDays}
       className={twMerge('am-calendar p-2 m-0 w-max rounded-md', className)}
       classNames={{
