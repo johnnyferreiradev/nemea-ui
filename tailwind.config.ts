@@ -252,7 +252,7 @@ export default {
       'swipe-out-left': 'swipeOutLeft 100ms ease-out',
       'swipe-out-up': 'swipeOutUp 100ms ease-out',
       'swipe-out-down': 'swipeOutDown 100ms ease-out',
-      spin: 'spin 4s infinite',
+      spin: 'spin 1s infinite',
       'spin-linear': 'spin 1s infinite linear',
       'spin-dot': 'spinDot 1s infinite',
       dot: 'dot 1s infinite linear',
