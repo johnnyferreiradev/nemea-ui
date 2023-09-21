@@ -91,7 +91,7 @@ export const Loading: StoryObj<TableRootProps> = {
     children: (
       <>
         <Table.Loader show>
-          <Loader type="bubbles" />
+          <Loader />
         </Table.Loader>
         <Table.Header>
           <Table.Row>
