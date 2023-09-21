@@ -4,7 +4,7 @@
   "version": "1.0.4",
   "type": "module",
   "publishConfig": {
-    "@johnnyferreiradev:registry": "https://npm.pkg.github.com"
+    "@johnnyferreiradev:registry": "https://registry.npmjs.org"
   },
   "scripts": {
     "dev": "vite",
