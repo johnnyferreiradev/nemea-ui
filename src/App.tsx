@@ -1,45 +1,11 @@
 import { useEffect, useState } from 'react';
-import * as z from 'zod';
-import { zodResolver } from '@hookform/resolvers/zod';
-import { useForm } from 'react-hook-form';
-import { User } from '@phosphor-icons/react';
-
-import ptBR from 'date-fns/locale/pt-BR';
 
 import { addDarkClassToHtml, removeDarkClassFromHtml } from './utils/darkmode';
 
-import {
-  Switch,
-  Form,
-  Input,
-  Button,
-  Dropdown,
-  Calendar,
-  DateRange,
-} from './lib';
-
-const formSchema = z.object({
-  username: z.string().min(2, {
-    message: 'Username must be at least 2 characters.',
-  }),
-});
+import { Button, Switch } from './lib';
 
 function App() {
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
-    defaultValues: {
-      username: '',
-    },
-  });
-
   const [darkMode, setDarkMode] = useState(false);
-  const [date, setDate] = useState<Date>();
-  const [dateRange, setDateRange] = useState<DateRange>();
-  const [dateMultiple, setDateMultiple] = useState<Date[]>();
-
-  const onSubmit = () => {
-    //  code...
-  };
 
   useEffect(() => {
     if (darkMode) {
@@ -75,138 +41,6 @@ function App() {
               <Switch size="sm" />
               <Switch size="md" />
               <Switch size="lg" />
-            </div>
-
-            <Calendar
-              className="mb-8"
-              mode="single"
-              disabled={new Date()}
-              selected={date}
-              onSelect={setDate}
-              locale={ptBR}
-            />
-            <Calendar
-              className="mb-8"
-              mode="range"
-              selected={dateRange}
-              onSelect={(dates) => setDateRange(dates)}
-              numberOfMonths={2}
-              locale={ptBR}
-            />
-            <Calendar
-              className="mb-8"
-              mode="multiple"
-              selected={dateMultiple}
-              onSelect={(dates) => setDateMultiple(dates)}
-              locale={ptBR}
-            />
-
-            <Calendar className="mb-8" mode="default" numberOfMonths={2} />
-
-            <Form.Root {...form}>
-              <form
-                onSubmit={form.handleSubmit(onSubmit)}
-                className="space-y-8 mb-8"
-              >
-                <Form.Field
-                  control={form.control}
-                  name="username"
-                  render={({ field }) => (
-                    <Form.Item>
-                      <Form.Label>Username</Form.Label>
-                      <Form.Control>
-                        <Input
-                          placeholder="Placeholder text"
-                          icon={
-                            <User className="text-primary-300" weight="bold" />
-                          }
-                          {...field}
-                        />
-                      </Form.Control>
-                      <Form.Description>
-                        This is your public display name.
-                      </Form.Description>
-                      <Form.Message />
-                    </Form.Item>
-                  )}
-                />
-                <Button.Root theme="primary" size="xs" type="submit">
-                  <Button.Label>Button</Button.Label>
-                </Button.Root>
-              </form>
-            </Form.Root>
-
-            <Dropdown.Root
-              trigger={<div className="mb-8 p-2 bg-light">Dropdown</div>}
-            >
-              <Dropdown.Item>Opção 1</Dropdown.Item>
-              <Dropdown.Item>Opção 1</Dropdown.Item>
-              <Dropdown.Item>Opção 1</Dropdown.Item>
-            </Dropdown.Root>
-
-            <div className="flex gap-1 items-center mb-4">
-              <p className="mr-2">xs</p>
-              <Input
-                placeholder="Placeholder text"
-                icon={<User className="text-primary-300" weight="bold" />}
-                theme="dark"
-                size="xs"
-              />
-              <Button.Root theme="primary" size="xs">
-                <Button.Label>Button</Button.Label>
-              </Button.Root>
-            </div>
-
-            <div className="flex gap-1 items-center mb-4">
-              <p className="mr-2 w-4">sm</p>
-              <Input
-                placeholder="Placeholder text"
-                icon={<User className="text-primary-300" weight="bold" />}
-                theme="dark"
-                size="sm"
-              />
-              <Button.Root theme="primary" size="sm">
-                <Button.Label>Button</Button.Label>
-              </Button.Root>
-            </div>
-
-            <div className="flex gap-1 items-center mb-4">
-              <p className="mr-2 w-4">md</p>
-              <Input
-                placeholder="Placeholder text"
-                icon={<User className="text-primary-300" weight="bold" />}
-                theme="dark"
-                size="md"
-              />
-              <Button.Root theme="primary" size="md">
-                <Button.Label>Button</Button.Label>
-              </Button.Root>
-            </div>
-
-            <div className="flex gap-1 items-center mb-4">
-              <p className="mr-2 w-4">lg</p>
-              <Input
-                placeholder="Placeholder text"
-                icon={<User className="text-primary-300" weight="bold" />}
-                theme="dark"
-                size="lg"
-              />
-              <Button.Root theme="primary" size="lg">
-                <Button.Label>Button</Button.Label>
-              </Button.Root>
-            </div>
-
-            <div className="flex gap-1 items-center mb-4">
-              <p className="mr-2 w-4">xl</p>
-              <Input
-                placeholder="Placeholder text"
-                icon={<User className="text-primary-300" weight="bold" />}
-                theme="dark"
-                size="xl"
-              />
-              <Button.Root theme="primary" size="xl">
-                <Button.Label>Button</Button.Label>
-              </Button.Root>
             </div>
           </div>
         </div>
