@@ -8,14 +8,12 @@ export default function PageLoaderLoader({
   className = '',
   color = 'primary',
   size,
-  type,
 }: PageLoaderLoaderProps) {
   return (
     <Loader
       className={twMerge('au-page-loader-loader mb-4', className)}
       color={color}
       size={size}
-      type={type}
     />
   );
 }
