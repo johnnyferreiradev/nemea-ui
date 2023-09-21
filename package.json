@@ -1,10 +1,10 @@
 {
-  "name": "@johnnyferreiradev/artmis-ui",
+  "name": "@johnnyferreiradev/artemis-ui",
   "private": false,
-  "version": "1.0.2",
+  "version": "1.0.3",
   "type": "module",
   "publishConfig": {
-    "@johnnyferreiradev:registry": "https://npm.pkg.github.com"
+    "@johnnyferreiradev:registry": "https://npm.pkg.github.com/johnnyferreiradev"
   },
   "scripts": {
     "dev": "vite",
@@ -98,6 +98,10 @@
   "keywords": [],
   "author": "Johnny Ferreira",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johnnyferreiradev/artemis-ui"
+  },
   "dependencies": {
     "@hookform/resolvers": "^3.3.0",
     "@phosphor-icons/react": "^2.0.10",
