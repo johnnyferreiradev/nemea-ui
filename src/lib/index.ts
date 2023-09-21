@@ -22,7 +22,8 @@ export { Button } from './components/Button';
 
 // export { default as Checkbox } from './components/Checkbox';
 
-export { default as Switch } from './components/Switch';
+import Switch from './components/Switch';
+export { Switch };
 
 // export { RadioGroup } from './components/RadioGroup';
 
