@@ -1,10 +1,10 @@
 {
   "name": "@johnnyferreiradev/artemis-ui",
   "private": false,
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "module",
   "publishConfig": {
-    "@johnnyferreiradev:registry": "https://npm.pkg.github.com/johnnyferreiradev"
+    "@johnnyferreiradev:registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "dev": "vite",
