@@ -1,7 +1,3 @@
-import '../index.css';
-
-export * from './locales';
-
 export { Button } from './components/Button';
 
 export { Alert } from './components/Alert';
