@@ -3,10 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-  *:focus {
-    @apply outline outline-2 outline-grayscale-300 rounded;
-  }
-
   body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

@@ -1,4 +1,3 @@
-// import ReactLoading from 'react-loading';
 import { forwardRef } from 'react';
 
 import { loaderVariants } from './variants';
