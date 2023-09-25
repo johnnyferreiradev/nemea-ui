@@ -1,5 +1,6 @@
 {
-  "name": "@artemis/ui",
+  "name": "nemea-ui",
+  "description": "UI kit for web application development",
   "private": false,
   "version": "1.0.1",
   "type": "module",
