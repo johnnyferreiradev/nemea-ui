@@ -19,7 +19,7 @@
     "declarationMap": true,
     "baseUrl": ".",
     "paths": {
-      "artemis-ui": ["src/components/index.ts"]
+      "nemea-ui": ["src/components/index.ts"]
     },
     "typeRoots": ["node_modules/@types", "src/components/index.d.ts", "src/lib/assets/images/custom.d.ts"]
   },
