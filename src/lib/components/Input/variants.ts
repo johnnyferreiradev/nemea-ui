@@ -14,8 +14,8 @@ export const inputWrapperVatiants = tv({
         'dark:[&.is-disabled]:bg-grayscale-900 dark:[&.is-disabled]:border-grayscale-700',
       ],
       gray: [
-        'bg-grayscale-100 border-grayscale-100 focus-within:border-grayscale-100',
-        'dark:bg-grayscale-800 dark:border-grayscale-800 dark:focus-within:border-grayscale-800',
+        'bg-grayscale-50 border-grayscale-50 focus-within:border-primary-600',
+        'dark:bg-grayscale-800 dark:border-grayscale-800 dark:focus-within:border-primary-400',
         '[&.is-disabled]:bg-grayscale-200 [&.is-disabled]:border-grayscale-200',
         'dark:[&.is-disabled]:bg-grayscale-700 dark:[&.is-disabled]:border-grayscale-700',
       ],
@@ -53,7 +53,7 @@ export const inputWrapperVatiants = tv({
 export const inputVariants = tv({
   base: [
     'am-input py-0 outline-none mx-1.5 w-full bg-transparent font-medium',
-    'placeholder-grayscale-300 disabled:placeholder-grayscale-300',
+    'placeholder-grayscale-400 disabled:placeholder-grayscale-300',
     'dark:placeholder-grayscale-500 dark:disabled:placeholder-grayscale-700',
     'disabled:text-grayscale-500 dark:disabled:text-grayscale-400',
     'resize-none default-scroll font-normal rounded-none',

@@ -1,3 +1,5 @@
+'use client';
+
 import { forwardRef } from 'react';
 import * as RadixLabel from '@radix-ui/react-label';
 import { twMerge } from 'tailwind-merge';
