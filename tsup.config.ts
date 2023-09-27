@@ -8,7 +8,7 @@ export default defineConfig(() => ({
   dts: true,
   outDir: 'dist',
   format: ['esm', 'cjs'],
-  name: 'tsup-lib-test',
+  name: 'nemea-ui',
   splitting: false,
   outExtension({ format }) {
     return {
