@@ -12,6 +12,7 @@ export const loaderVariants = tv({
       warning: ['fill-warning-600'],
       dark: ['fill-dark dark:fill-light'],
       light: ['fill-light dark:fill-dark'],
+      white: ['fill-light'],
     },
     size: {
       xs: ['w-4 h-4'],

@@ -7,6 +7,7 @@ export enum LoaderColors {
   'warning' = 'warning',
   'dark' = 'dark',
   'light' = 'light',
+  'white' = 'white',
 }
 
 export enum LoaderSizes {

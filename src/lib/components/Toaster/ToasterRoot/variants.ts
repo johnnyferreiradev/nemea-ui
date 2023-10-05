@@ -2,7 +2,7 @@ import { tv } from 'tailwind-variants';
 
 export const toasterRoot = tv({
   base: [
-    'au-toaster-root bg-light',
+    'au-toaster-root bg-light w-full',
     'dark:bg-grayscale-800 p-4 pt-[18px] rounded-lg outline-none',
     'shadow-md',
     'data-[state="closed"]:animate-fade-out',
@@ -59,7 +59,7 @@ export const toasterRoot = tv({
 export const toasterViewport = tv({
   base: [
     'outline-none fixed flex flex-col p-4 translate-x-0',
-    'gap-3 max-w-full z-50',
+    'gap-3 w-full max-w-max z-50',
   ],
   variants: {
     position: {
