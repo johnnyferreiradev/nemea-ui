@@ -1,3 +1,5 @@
+'use client';
+
 export { Button } from './components/Button';
 
 export { Alert } from './components/Alert';
