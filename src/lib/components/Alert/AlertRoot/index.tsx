@@ -7,7 +7,7 @@ const alertRoot = tv({
   base: [
     'au-alert-root w-full translate-x-[var(--radix-toast-swipe-move-x)]',
     'p-4 rounded-lg outline-none animate-fade-in-down',
-    'grid grid-rows-[max-content_max-content] grid-cols-[max-content_auto_max-content] gap-4 gap-y-0',
+    'grid grid-rows-[max-content_max-content] grid-cols-[max-content_auto_max-content] gap-x-4 gap-y-0',
     'items-center',
   ],
   variants: {
