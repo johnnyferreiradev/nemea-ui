@@ -7,7 +7,7 @@ export default function AlertDescription({
   children,
 }: AlertDescriptionProps) {
   return (
-    <div className={twMerge('au-alert-description break-all', className)}>
+    <div className={twMerge('au-alert-description break-words', className)}>
       {children}
     </div>
   );
