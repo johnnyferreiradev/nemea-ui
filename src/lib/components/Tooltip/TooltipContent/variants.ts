@@ -7,12 +7,12 @@ export const tooltipContentVariants = tv({
   variants: {
     theme: {
       light: [
-        'bg-light dark:bg-grayscale-900',
+        'bg-light dark:bg-grayscale-950',
         '[&_.au-tooltip-arrow]:fill-light',
         'dark:[&_.au-tooltip-arrow]:fill-grayscale-900',
       ],
       dark: [
-        'bg-grayscale-900 dark:bg-light',
+        'bg-grayscale-950 dark:bg-light',
         '[&_.au-tooltip-arrow]:fill-grayscale-900',
         'dark:[&_.au-tooltip-arrow]:fill-light',
       ],
