@@ -8,7 +8,7 @@ export default function TooltipContent({
   className = '',
   id,
   children,
-  theme = 'white',
+  theme = 'light',
   side = 'bottom',
   ...rest
 }: TooltipContentProps) {
