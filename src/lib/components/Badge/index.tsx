@@ -5,49 +5,35 @@ import { twMerge } from 'tailwind-merge';
 
 const badgeVariants = tv({
   base: [
-    'au-badge relative rounded-full inline-flex items-center text-base w-max font-semibold transition-colors',
+    'au-badge relative rounded-md inline-flex items-center text-base w-max font-semibold transition-colors',
     'focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2',
   ],
   variants: {
     theme: {
-      primary: ['text-[var(--white-color)]'],
-      primary100: ['text-[var(--primary-color)]'],
-      secondary: ['text-[var(--white-color)]'],
-      secondary200: ['text-[var(--white-color)]'],
-      secondary_20: ['text-[var(--secondary-color)]'],
-      tertiary1: ['text-[var(--white-color)]'],
-      tertiary3: ['text-[var(--white-color)]'],
-      supportPastel2: ['text-[var(--white-color)]'],
-      supportPastel2_20: ['text-[var(--support-pastel-color-2)]'],
-      gray200: ['text-[var(--dark-color)]'],
-      gray300: ['text-[var(--white-color)]'],
-      gray200White: ['text-[var(--white-color)]'],
-      success100: ['text-[var(--success-color)]'],
-      danger100: ['text-[var(--danger-color)]'],
-      danger200: ['text-[var(--white-color)]'],
-      dark: ['text-[var(--white-color)]'],
+      primary: ['text-light'],
+      secondary: ['text-light'],
+      tertiary: ['text-light'],
+      gray: ['text-dark dark:text-light'],
+      success: ['text-light'],
+      failure: ['text-light'],
+      warning: ['text-light'],
+      dark: ['text-dark dark:text-light'],
+      light: ['text-light dark:text-dark'],
 
       // outlines
-      outlinePrimary: ['text-[var(--primary-color)]'],
-      outlinePrimary100: ['text-[var(--primary-color)]'],
-      outlineSecondary: ['text-[var(--secondary-color)]'],
-      outlineSecondary200: ['text-[var(--secondary-color-200)]'],
-      outlineSecondary_20: ['text-[var(--secondary-color)]'],
-      outlineTertiary1: ['text-[var(--tertiary-color-1)]'],
-      outlineTertiary3: ['text-[var(--tertiary-color-3)]'],
-      outlineSupportPastel2: ['text-[var(--support-pastel-color-2)]'],
-      outlineSupportPastel2_20: ['text-[var(--support-pastel-color-2)]'],
-      outlineGray200: ['text-[var(--grayscale-300)]'],
-      outlineGray300: ['text-[var(--grayscale-300)]'],
-      outlineGray200White: ['text-[var(--grayscale-200)]'],
-      outlineSuccess100: ['text-[var(--success-color)]'],
-      outlineDanger100: ['text-[var(--danger-color)]'],
-      outlineDanger200: ['text-[var(--danger-color)]'],
-      outlineDark: ['text-[var(--dark-color)]'],
+      outlinePrimary: ['text-light'],
+      outlineSecondary: ['text-light'],
+      outlineTertiary: ['text-light'],
+      outlineGray: ['text-dark dark:text-light'],
+      outlineSuccess: ['text-light'],
+      outlineFailure: ['text-light'],
+      outlineWarning: ['text-light'],
+      outlineDark: ['text-dark dark:text-light'],
+      outlineLight: ['text-light dark:text-dark'],
     },
   },
   defaultVariants: {
-    theme: 'primary',
+    theme: 'gray',
   },
 });
 
@@ -55,74 +41,36 @@ const badgeBackgroundVariants = tv({
   base: ['absolute w-full h-full z-10 inline-flex items-center rounded-full'],
   variants: {
     theme: {
-      primary: ['bg-[var(--primary-color)]'],
-      primary100: ['bg-[var(--primary-color-100)]'],
-      secondary: ['bg-[var(--secondary-color)]'],
-      secondary200: ['bg-[var(--secondary-color-200)]'],
-      secondary_20: ['bg-[var(--secondary-color)] opacity-20'],
-      tertiary1: ['bg-[var(--tertiary-color-1)]'],
-      tertiary3: ['bg-[var(--tertiary-color-3)]'],
-      supportPastel2: ['bg-[var(--support-pastel-color-2)]'],
-      supportPastel2_20: ['bg-[var(--support-pastel-color-2)] opacity-20'],
-      gray200: ['bg-[var(--grayscale-200)]'],
-      gray300: ['bg-[var(--grayscale-300)]'],
-      gray200White: ['bg-[var(--grayscale-200)]'],
-      success100: ['bg-[var(--success-color-100)]'],
-      danger100: ['bg-[var(--danger-color-100)]'],
-      danger200: ['bg-[var(--danger-color)]'],
-      dark: ['bg-[var(--dark-color)]'],
+      primary: ['bg-primary-600'],
+      secondary: ['bg-secondary-600'],
+      tertiary: ['bg-tertiary-600'],
+      gray: ['bg-grayscale-50 dark:bg-grayscale-800'],
+      success: ['bg-success-600'],
+      failure: ['bg-failure-600'],
+      warning: ['bg-warning-600'],
+      dark: ['bg-dark'],
+      light: ['bg-light'],
 
       // outlines
-      outlinePrimary: [
-        'bg-none border border-solid border-[var(--primary-color)]',
+      outlinePrimary: ['bg-none border border-solid border-primary-600'],
+      outlineSecondary: ['bg-none border border-solid border-secondary-600'],
+      outlineTertiary: ['bg-none border border-solid border-tertiary-600'],
+      outlineGray: [
+        'bg-none border border-solid border-grayscale-50 dark:border-grayscale-800',
       ],
-      outlinePrimary100: [
-        'bg-none border border-solid border-[var(--primary-color-100)]',
+      outlineSuccess: ['bg-none border border-solid border-success-600'],
+      outlineFailure: ['bg-none border border-solid border-failure-600'],
+      outlineWarning: ['bg-none border border-solid border-warning-600'],
+      outlineDark: [
+        'bg-none border border-solid border-dark dark:border-light',
       ],
-      outlineSecondary: [
-        'bg-none border border-solid border-[var(--secondary-color)]',
+      outlineLight: [
+        'bg-none border border-solid border-light dark:border-dark',
       ],
-      outlineSecondary200: [
-        'bg-none border border-solid border-[var(--secondary-color-200)]',
-      ],
-      outlineSecondary_20: [
-        'bg-none border border-solid border-[var(--grayscale-100)]',
-      ],
-      outlineTertiary1: [
-        'bg-none border border-solid border-[var(--tertiary-color-1)]',
-      ],
-      outlineTertiary3: [
-        'bg-none border border-solid border-[var(--tertiary-color-3)]',
-      ],
-      outlineSupportPastel2: [
-        'bg-none border border-solid border-[var(--support-pastel-color-2)]',
-      ],
-      outlineSupportPastel2_20: [
-        'bg-none border border-solid border-[var(--grayscale-100)]',
-      ],
-      outlineGray200: [
-        'bg-none border border-solid border-[var(--grayscale-200)]',
-      ],
-      outlineGray300: [
-        'bg-none border border-solid border-[var(--grayscale-300)]',
-      ],
-      outlineGray200White: [
-        'bg-none border border-solid border-[var(--grayscale-200)]',
-      ],
-      outlineSuccess100: [
-        'bg-none border border-solid border-[var(--success-color)]',
-      ],
-      outlineDanger100: [
-        'bg-none border border-solid border-[var(--danger-color-100)]',
-      ],
-      outlineDanger200: [
-        'bg-none border border-solid border-[var(--danger-color)]',
-      ],
-      outlineDark: ['bg-none border border-solid border-[var(--dark-color)]'],
     },
   },
   defaultVariants: {
-    theme: 'primary',
+    theme: 'gray',
   },
 });
 
@@ -143,9 +91,7 @@ export default function Badge({
           className: backgroundClassName,
         })}
       />
-      <div className={twMerge('z-20 px-4 py-3', contentClassName)}>
-        {children}
-      </div>
+      <div className={twMerge('z-20 p-1', contentClassName)}>{children}</div>
     </div>
   );
 }

@@ -254,7 +254,7 @@ export const buttonVariants = tv({
       ],
 
       grayPrimary: [
-        'bg-none text-primary-600',
+        'bg-none text-primary-600 dark:text-primary-400',
         'bg-grayscale-50 dark:bg-grayscale-800',
         'hover:bg-grayscale-200 dark:hover:bg-grayscale-700',
         'active:bg-primary-600 active:text-light',
@@ -264,7 +264,7 @@ export const buttonVariants = tv({
         'outline-grayscale-200 dark:outline-grayscale-900',
       ],
       graySecondary: [
-        'bg-none text-secondary-600',
+        'bg-none text-secondary-600 dark:text-secondary-400',
         'bg-grayscale-50 dark:bg-grayscale-800',
         'hover:bg-grayscale-200 dark:hover:bg-grayscale-700',
         'active:bg-secondary-600 active:text-light',
@@ -274,7 +274,7 @@ export const buttonVariants = tv({
         'outline-grayscale-200 dark:outline-grayscale-900',
       ],
       grayTertiary: [
-        'bg-none text-tertiary-600',
+        'bg-none text-tertiary-600 dark:text-tertiary-400',
         'bg-grayscale-50 dark:bg-grayscale-800',
         'hover:bg-grayscale-200 dark:hover:bg-grayscale-700',
         'active:bg-tertiary-600 active:text-light',
@@ -284,7 +284,7 @@ export const buttonVariants = tv({
         'outline-grayscale-200 dark:outline-grayscale-900',
       ],
       graySuccess: [
-        'bg-none text-success-600',
+        'bg-none text-success-600 dark:text-grayscale-400',
         'bg-grayscale-50 dark:bg-grayscale-800',
         'hover:bg-grayscale-200 dark:hover:bg-grayscale-700',
         'active:bg-success-600 active:text-light',
@@ -294,7 +294,7 @@ export const buttonVariants = tv({
         'outline-grayscale-200 dark:outline-grayscale-900',
       ],
       grayFailure: [
-        'bg-none text-failure-600',
+        'bg-none text-failure-600 dark:text-failure-400',
         'bg-grayscale-50 dark:bg-grayscale-800',
         'hover:bg-grayscale-200 dark:hover:bg-grayscale-700',
         'active:bg-failure-600 active:text-light',
@@ -304,7 +304,7 @@ export const buttonVariants = tv({
         'outline-grayscale-200 dark:outline-grayscale-900',
       ],
       grayWarning: [
-        'bg-none text-warning-500',
+        'bg-none text-warning-500 dark:text-warning-400',
         'bg-grayscale-50 dark:bg-grayscale-800',
         'hover:bg-grayscale-200 dark:hover:bg-grayscale-700',
         'active:bg-warning-500 active:text-light',
