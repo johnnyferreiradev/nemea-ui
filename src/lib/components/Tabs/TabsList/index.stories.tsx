@@ -80,7 +80,7 @@ export const Themes: StoryObj<TabsListProps> = {
           <Tabs.Root defaultValue="tab1">
             {Story({
               args: {
-                theme: 'white',
+                theme: 'light',
                 children: (
                   <>
                     <Tabs.Trigger value="tab1">Tab 1</Tabs.Trigger>
@@ -188,122 +188,6 @@ export const Themes: StoryObj<TabsListProps> = {
             </Tabs.Content>
           </Tabs.Root>
         </div>
-
-        <div className="w-72 flex flex-col items-center p-8">
-          <Text weight="semibold" color="grayscale300" className="mb-2">
-            Left dark underline
-          </Text>
-          <Tabs.Root defaultValue="tab1">
-            {Story({
-              args: {
-                theme: 'leftDarkUnderline',
-                children: (
-                  <>
-                    <Tabs.Trigger value="tab1">Tab 1</Tabs.Trigger>
-                    <Tabs.Trigger value="tab2">Tab 2</Tabs.Trigger>
-                    <Tabs.Trigger value="tab3">Tab 3</Tabs.Trigger>
-                  </>
-                ),
-              },
-            })}
-            <Tabs.Content value="tab1" className="p-4">
-              Conteúdo da tab 1
-            </Tabs.Content>
-            <Tabs.Content value="tab2" className="p-4">
-              Conteúdo da tab 2
-            </Tabs.Content>
-            <Tabs.Content value="tab3" className="p-4">
-              Conteúdo da tab 3
-            </Tabs.Content>
-          </Tabs.Root>
-        </div>
-
-        <div className="w-72 flex flex-col items-center p-8">
-          <Text weight="semibold" color="grayscale300" className="mb-2">
-            Right dark underline
-          </Text>
-          <Tabs.Root defaultValue="tab1">
-            {Story({
-              args: {
-                theme: 'rightDarkUnderline',
-                children: (
-                  <>
-                    <Tabs.Trigger value="tab1">Tab 1</Tabs.Trigger>
-                    <Tabs.Trigger value="tab2">Tab 2</Tabs.Trigger>
-                    <Tabs.Trigger value="tab3">Tab 3</Tabs.Trigger>
-                  </>
-                ),
-              },
-            })}
-            <Tabs.Content value="tab1" className="p-4">
-              Conteúdo da tab 1
-            </Tabs.Content>
-            <Tabs.Content value="tab2" className="p-4">
-              Conteúdo da tab 2
-            </Tabs.Content>
-            <Tabs.Content value="tab3" className="p-4">
-              Conteúdo da tab 3
-            </Tabs.Content>
-          </Tabs.Root>
-        </div>
-
-        <div className="w-72 flex flex-col items-center p-8">
-          <Text weight="semibold" color="grayscale300" className="mb-2">
-            Left primary underline
-          </Text>
-          <Tabs.Root defaultValue="tab1">
-            {Story({
-              args: {
-                theme: 'leftPrimaryUnderline',
-                children: (
-                  <>
-                    <Tabs.Trigger value="tab1">Tab 1</Tabs.Trigger>
-                    <Tabs.Trigger value="tab2">Tab 2</Tabs.Trigger>
-                    <Tabs.Trigger value="tab3">Tab 3</Tabs.Trigger>
-                  </>
-                ),
-              },
-            })}
-            <Tabs.Content value="tab1" className="p-4">
-              Conteúdo da tab 1
-            </Tabs.Content>
-            <Tabs.Content value="tab2" className="p-4">
-              Conteúdo da tab 2
-            </Tabs.Content>
-            <Tabs.Content value="tab3" className="p-4">
-              Conteúdo da tab 3
-            </Tabs.Content>
-          </Tabs.Root>
-        </div>
-
-        <div className="w-72 flex flex-col items-center p-8">
-          <Text weight="semibold" color="grayscale300" className="mb-2">
-            Right primary underline
-          </Text>
-          <Tabs.Root defaultValue="tab1">
-            {Story({
-              args: {
-                theme: 'rightPrimaryUnderline',
-                children: (
-                  <>
-                    <Tabs.Trigger value="tab1">Tab 1</Tabs.Trigger>
-                    <Tabs.Trigger value="tab2">Tab 2</Tabs.Trigger>
-                    <Tabs.Trigger value="tab3">Tab 3</Tabs.Trigger>
-                  </>
-                ),
-              },
-            })}
-            <Tabs.Content value="tab1" className="p-4">
-              Conteúdo da tab 1
-            </Tabs.Content>
-            <Tabs.Content value="tab2" className="p-4">
-              Conteúdo da tab 2
-            </Tabs.Content>
-            <Tabs.Content value="tab3" className="p-4">
-              Conteúdo da tab 3
-            </Tabs.Content>
-          </Tabs.Root>
-        </div>
       </div>
     ),
   ],
@@ -311,7 +195,7 @@ export const Themes: StoryObj<TabsListProps> = {
 
 export const Rounded: StoryObj<TabsListProps> = {
   args: {
-    theme: 'white',
+    theme: 'light',
     rounded: true,
   },
 };

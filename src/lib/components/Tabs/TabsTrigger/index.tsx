@@ -14,7 +14,7 @@ export default function TabsTrigger({
   return (
     <RadixTabs.Trigger
       className={twMerge(
-        'au-tabs-trigger px-[14px] py-2 rounded-[7px] border-2 border-solid border-transparent outline-none',
+        'au-tabs-trigger py-1 px-2 rounded-md border-2 border-solid border-transparent outline-none',
         className,
       )}
       id={id}

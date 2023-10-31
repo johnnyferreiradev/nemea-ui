@@ -2,183 +2,99 @@ import { tv } from 'tailwind-variants';
 
 export const tabsListVariants = tv({
   base: [
-    'au-tabs-list p-2 w-max rounded-[14px] flex gap-1',
+    'au-tabs-list p-1.5 w-max rounded-md flex gap-1',
     'data-[orientation="horizontal"]:flex-col',
   ],
   variants: {
     theme: {
       default: [
         'bg-none',
-        '[&>.au-tabs-trigger]:bg-none [&>.au-tabs-trigger]:text-[var(--grayscale-200)]', // enabled
-        '[&>button.au-tabs-trigger[data-disabled]]:text-[var(--grayscale-100)]', // disabled
-        '[&>.au-tabs-trigger:hover]:text-[var(--dark-color)]', // hover
-        '[&>.au-tabs-trigger[data-state="active"]]:bg-[var(--gray-color)] [&>.au-tabs-trigger[data-state="active"]]:text-[var(--dark-color)]', // selected
+        '[&>.au-tabs-trigger]:bg-none [&>.au-tabs-trigger]:text-grayscale-400', // enabled
+        '[&>button.au-tabs-trigger[data-disabled]]:text-grayscale-200', // disabled
+        '[&>.au-tabs-trigger:hover]:text-dark', // hover
+        '[&>.au-tabs-trigger[data-state="active"]]:bg-grayscale-100 [&>.au-tabs-trigger[data-state="active"]]:text-dark', // selected
         // disabled and selected
-        '[&>button.au-tabs-trigger[data-disabled][data-state="active"]]:text-[var(--grayscale-200)]',
+        '[&>button.au-tabs-trigger[data-disabled][data-state="active"]]:text-grayscale-400',
 
         // darkmode
-        '[&>button.au-tabs-trigger[data-disabled]]:dark:text-[var(--grayscale-300)]', // disabled
-        '[&>.au-tabs-trigger:hover]:dark:text-[var(--white-color)]', // hover
-        '[&>.au-tabs-trigger[data-state="active"]]:dark:bg-[var(--grayscale-400)] [&>.au-tabs-trigger[data-state="active"]]:dark:text-[var(--white-color)]', // selected
+        '[&>button.au-tabs-trigger[data-disabled]]:dark:text-grayscale-700', // disabled
+        '[&>.au-tabs-trigger:hover]:dark:text-light', // hover
+        '[&>.au-tabs-trigger[data-state="active"]]:dark:bg-grayscale-800 [&>.au-tabs-trigger[data-state="active"]]:dark:text-light', // selected
         // disabled and selected
-        '[&>button.au-tabs-trigger[data-disabled][data-state="active"]]:dark:text-[var(--grayscale-300)]',
+        '[&>button.au-tabs-trigger[data-disabled][data-state="active"]]:dark:text-grayscale-700',
       ],
-      white: [
-        'bg-[var(--gray-color)]',
-        '[&>.au-tabs-trigger]:bg-none [&>.au-tabs-trigger]:text-[var(--grayscale-200)]', // enabled
-        '[&>button.au-tabs-trigger[data-disabled]]:bg-none [&>button.au-tabs-trigger[data-disabled]]:text-[var(--grayscale-100)]', // disabled
-        '[&>.au-tabs-trigger:hover]:text-[var(--dark-color)]', // hover
-        '[&>.au-tabs-trigger[data-state="active"]]:bg-[var(--white-color)] [&>.au-tabs-trigger[data-state="active"]]:text-[var(--dark-color)]', // selected
+      light: [
+        'bg-grayscale-50',
+        '[&>.au-tabs-trigger]:bg-none [&>.au-tabs-trigger]:text-grayscale-400', // enabled
+        '[&>button.au-tabs-trigger[data-disabled]]:bg-none [&>button.au-tabs-trigger[data-disabled]]:text-grayscale-200', // disabled
+        '[&>.au-tabs-trigger:hover]:text-dark', // hover
+        '[&>.au-tabs-trigger[data-state="active"]]:bg-light [&>.au-tabs-trigger[data-state="active"]]:text-dark', // selected
         // disabled and selected
-        '[&>button.au-tabs-trigger[data-disabled][data-state="active"]]:bg-[var(--grayscale-100)] [&>button.au-tabs-trigger[data-disabled][data-state="active"]]:text-[var(--grayscale-200)]',
+        '[&>button.au-tabs-trigger[data-disabled][data-state="active"]]:bg-grayscale-50 [&>button.au-tabs-trigger[data-disabled][data-state="active"]]:text-grayscale-400',
 
         // darkmode
-        'dark:bg-[var(--grayscale-400)]',
-        '[&>.au-tabs-trigger]:bg-none [&>.au-tabs-trigger]:dark:text-[var(--grayscale-200)]', // enabled
-        '[&>button.au-tabs-trigger[data-disabled]]:dark:text-[var(--grayscale-300)]', // disabled
-        '[&>.au-tabs-trigger:hover]:dark:text-[var(--white-color)]', // hover
-        '[&>.au-tabs-trigger[data-state="active"]]:dark:bg-[var(--dark-color)] [&>.au-tabs-trigger[data-state="active"]]:dark:text-[var(--white-color)]', // selected
+        'dark:bg-grayscale-800',
+        '[&>.au-tabs-trigger]:bg-none [&>.au-tabs-trigger]:dark:text-grayscale-400', // enabled
+        '[&>button.au-tabs-trigger[data-disabled]]:dark:text-grayscale-700', // disabled
+        '[&>.au-tabs-trigger:hover]:dark:text-light', // hover
+        '[&>.au-tabs-trigger[data-state="active"]]:dark:bg-grayscale-700 [&>.au-tabs-trigger[data-state="active"]]:dark:text-light', // selected
         // disabled and selected
-        '[&>button.au-tabs-trigger[data-disabled][data-state="active"]]:dark:bg-[var(--grayscale-300)] [&>button.au-tabs-trigger[data-disabled][data-state="active"]]:dark:text-[var(--grayscale-200)]',
+        '[&>button.au-tabs-trigger[data-disabled][data-state="active"]]:dark:bg-grayscale-700 [&>button.au-tabs-trigger[data-disabled][data-state="active"]]:dark:text-grayscale-400',
       ],
       dark: [
-        'bg-[var(--grayscale-400)]',
-        '[&>.au-tabs-trigger]:bg-none [&>.au-tabs-trigger]:text-[var(--grayscale-200)]', // enabled
-        '[&>button.au-tabs-trigger[data-disabled]]:bg-none [&>button.au-tabs-trigger[data-disabled]]:text-[var(--grayscale-300)]', // disabled
-        '[&>.au-tabs-trigger:hover]:text-[var(--white-color)]', // hover
-        '[&>.au-tabs-trigger[data-state="active"]]:bg-[var(--dark-color)] [&>.au-tabs-trigger[data-state="active"]]:text-[var(--white-color)]', // selected
+        'bg-grayscale-950',
+        '[&>.au-tabs-trigger]:bg-none [&>.au-tabs-trigger]:text-grayscale-400', // enabled
+        '[&>button.au-tabs-trigger[data-disabled]]:bg-none [&>button.au-tabs-trigger[data-disabled]]:text-grayscale-700', // disabled
+        '[&>.au-tabs-trigger:hover]:text-light', // hover
+        '[&>.au-tabs-trigger[data-state="active"]]:bg-grayscale-700 [&>.au-tabs-trigger[data-state="active"]]:text-light', // selected
         // disabled and selected
-        '[&>button.au-tabs-trigger[data-disabled][data-state="active"]]:bg-[var(--grayscale-300)] [&>button.au-tabs-trigger[data-disabled][data-state="active"]]:text-[var(--grayscale-200)]',
+        '[&>button.au-tabs-trigger[data-disabled][data-state="active"]]:bg-grayscale-700 [&>button.au-tabs-trigger[data-disabled][data-state="active"]]:text-grayscale-400',
 
         // darkmode
-        'dark:bg-[var(--gray-color)]',
-        '[&>button.au-tabs-trigger[data-disabled]]:dark:text-[var(--grayscale-100)]', // disabled
-        '[&>.au-tabs-trigger:hover]:dark:text-[var(--dark-color)]', // hover
-        '[&>.au-tabs-trigger[data-state="active"]]:dark:bg-[var(--white-color)] [&>.au-tabs-trigger[data-state="active"]]:dark:text-[var(--dark-color)]', // selected
+        'dark:bg-grayscale-50',
+        '[&>button.au-tabs-trigger[data-disabled]]:dark:text-grayscale-50', // disabled
+        '[&>.au-tabs-trigger:hover]:dark:text-dark', // hover
+        '[&>.au-tabs-trigger[data-state="active"]]:dark:bg-light [&>.au-tabs-trigger[data-state="active"]]:dark:text-dark', // selected
         // disabled and selected
-        '[&>button.au-tabs-trigger[data-disabled][data-state="active"]]:dark:bg-[var(--grayscale-100)] [&>button.au-tabs-trigger[data-disabled][data-state="active"]]:dark:text-[var(--grayscale-200)]',
+        '[&>button.au-tabs-trigger[data-disabled][data-state="active"]]:dark:bg-grayscale-50 [&>button.au-tabs-trigger[data-disabled][data-state="active"]]:dark:text-grayscale-400',
       ],
       darkUnderline: [
         'bg-none [&>.au-tabs-trigger]:rounded-none',
-        '[&>.au-tabs-trigger]:bg-none [&>.au-tabs-trigger]:text-[var(--grayscale-200)]', // enabled
-        '[&>button.au-tabs-trigger[data-disabled]]:text-[var(--grayscale-100)]', // disabled
-        '[&>.au-tabs-trigger:hover]:text-[var(--dark-color)]', // hover
+        '[&>.au-tabs-trigger]:bg-none [&>.au-tabs-trigger]:text-grayscale-400', // enabled
+        '[&>button.au-tabs-trigger[data-disabled]]:text-grayscale-50', // disabled
+        '[&>.au-tabs-trigger:hover]:text-dark', // hover
         // selected
         '[&>.au-tabs-trigger[data-state="active"]]:border-x-transparent [&>.au-tabs-trigger[data-state="active"]]:border-t-transparent',
-        '[&>.au-tabs-trigger[data-state="active"]]:border-b-[var(--dark-color)] [&>.au-tabs-trigger[data-state="active"]]:text-[var(--dark-color)]',
+        '[&>.au-tabs-trigger[data-state="active"]]:border-b-dark [&>.au-tabs-trigger[data-state="active"]]:text-dark',
         // disabled and selected
-        '[&>button.au-tabs-trigger[data-disabled][data-state="active"]]:text-[var(--grayscale-200)] [&>button.au-tabs-trigger[data-disabled][data-state="active"]]:border-b-[var(--graycale-200)]',
+        '[&>button.au-tabs-trigger[data-disabled][data-state="active"]]:text-grayscale-400 [&>button.au-tabs-trigger[data-disabled][data-state="active"]]:border-b-grayscale-300',
 
         // darkmode
-        '[&>button.au-tabs-trigger[data-disabled]]:dark:text-[var(--grayscale-300)]', // disabled
-        '[&>.au-tabs-trigger:hover]:dark:text-[var(--white-color)]', // hover
+        '[&>button.au-tabs-trigger[data-disabled]]:dark:text-grayscale-700', // disabled
+        '[&>.au-tabs-trigger:hover]:dark:text-light', // hover
         // selected
-        '[&>.au-tabs-trigger[data-state="active"]]:dark:border-b-[var(--white-color)] [&>.au-tabs-trigger[data-state="active"]]:dark:text-[var(--white-color)]',
+        '[&>.au-tabs-trigger[data-state="active"]]:dark:border-b-light [&>.au-tabs-trigger[data-state="active"]]:dark:text-light',
         // disabled and selected
-        '[&>button.au-tabs-trigger[data-disabled][data-state="active"]]:dark:text-[var(--grayscale-300)] [&>button.au-tabs-trigger[data-disabled][data-state="active"]]:border-b-[var(--graycale-300)]',
+        '[&>button.au-tabs-trigger[data-disabled][data-state="active"]]:dark:text-grayscale-700 [&>button.au-tabs-trigger[data-disabled][data-state="active"]]:border-b-grayscale-500',
       ],
       primaryUnderline: [
         'bg-none [&>.au-tabs-trigger]:rounded-none',
-        '[&>.au-tabs-trigger]:bg-none [&>.au-tabs-trigger]:text-[var(--grayscale-200)]', // enabled
-        '[&>button.au-tabs-trigger[data-disabled]]:text-[var(--grayscale-100)]', // disabled
-        '[&>.au-tabs-trigger:hover]:text-[var(--primary-color)]', // hover
+        '[&>.au-tabs-trigger]:bg-none [&>.au-tabs-trigger]:text-grayscale-400', // enabled
+        '[&>button.au-tabs-trigger[data-disabled]]:text-grayscale-50', // disabled
+        '[&>.au-tabs-trigger:hover]:text-primary-600', // hover
         // selected
         '[&>.au-tabs-trigger[data-state="active"]]:border-x-transparent [&>.au-tabs-trigger[data-state="active"]]:border-t-transparent',
-        '[&>.au-tabs-trigger[data-state="active"]]:border-b-[var(--primary-color-100)] [&>.au-tabs-trigger[data-state="active"]]:text-[var(--primary-color)]',
+        '[&>.au-tabs-trigger[data-state="active"]]:border-b-primary-300 [&>.au-tabs-trigger[data-state="active"]]:text-primary-600',
         // disabled and selected
-        '[&>button.au-tabs-trigger[data-disabled][data-state="active"]]:text-[var(--grayscale-200)] [&>button.au-tabs-trigger[data-disabled][data-state="active"]]:border-b-[var(--graycale-200)]',
+        '[&>button.au-tabs-trigger[data-disabled][data-state="active"]]:text-grayscale-400 [&>button.au-tabs-trigger[data-disabled][data-state="active"]]:border-b-grayscale-300',
 
         // darkmode
-        '[&>button.au-tabs-trigger[data-disabled]]:dark:text-[var(--grayscale-300)]', // disabled
-        '[&>.au-tabs-trigger:hover]:dark:text-[var(--primary-color-100)]', // hover
+        '[&>button.au-tabs-trigger[data-disabled]]:dark:text-grayscale-700', // disabled
+        '[&>.au-tabs-trigger:hover]:dark:text-primary-300', // hover
         // selected
-        '[&>.au-tabs-trigger[data-state="active"]]:dark:border-b-[var(--primary-color)] [&>.au-tabs-trigger[data-state="active"]]:dark:text-[var(--primary-color-100)]',
+        '[&>.au-tabs-trigger[data-state="active"]]:dark:border-b-primary-600 [&>.au-tabs-trigger[data-state="active"]]:dark:text-primary-300',
         // disabled and selected
-        '[&>button.au-tabs-trigger[data-disabled][data-state="active"]]:dark:text-[var(--grayscale-300)] [&>button.au-tabs-trigger[data-disabled][data-state="active"]]:border-b-[var(--graycale-300)]',
-      ],
-      leftDarkUnderline: [
-        'bg-none [&>.au-tabs-trigger]:rounded-none',
-        '[&>.au-tabs-trigger]:bg-none [&>.au-tabs-trigger]:text-[var(--grayscale-200)]', // enabled
-        '[&>button.au-tabs-trigger[data-disabled]]:text-[var(--grayscale-100)]', // disabled
-        '[&>.au-tabs-trigger:hover]:text-[var(--dark-color)]', // hover
-        // selected
-        '[&>.au-tabs-trigger[data-state="active"]]:border-y-transparent [&>.au-tabs-trigger[data-state="active"]]:border-r-transparent',
-        '[&>.au-tabs-trigger[data-state="active"]]:border-l-[var(--dark-color)]',
-        '[&>.au-tabs-trigger[data-state="active"]]:bg-[var(--gray-color)] [&>.au-tabs-trigger[data-state="active"]]:text-[var(--dark-color)]',
-        // disabled and selected
-        '[&>button.au-tabs-trigger[data-disabled][data-state="active"]]:text-[var(--grayscale-200)] [&>button.au-tabs-trigger[data-disabled][data-state="active"]]:border-l-[var(--graycale-200)]',
-
-        // darkmode
-        '[&>button.au-tabs-trigger[data-disabled]]:dark:text-[var(--grayscale-300)]', // disabled
-        '[&>.au-tabs-trigger:hover]:dark:text-[var(--white-color)]', // hover
-        // selected
-        '[&>.au-tabs-trigger[data-state="active"]]:dark:border-l-[var(--white-color)]',
-        '[&>.au-tabs-trigger[data-state="active"]]:dark:bg-[var(--grayscale-400)] [&>.au-tabs-trigger[data-state="active"]]:dark:text-[var(--white-color)]',
-        // disabled and selected
-        '[&>button.au-tabs-trigger[data-disabled][data-state="active"]]:dark:text-[var(--grayscale-300)] [&>button.au-tabs-trigger[data-disabled][data-state="active"]]:dark:border-l-[var(--graycale-300)]',
-      ],
-      rightDarkUnderline: [
-        'bg-none [&>.au-tabs-trigger]:rounded-none',
-        '[&>.au-tabs-trigger]:bg-none [&>.au-tabs-trigger]:text-[var(--grayscale-200)]', // enabled
-        '[&>button.au-tabs-trigger[data-disabled]]:text-[var(--grayscale-100)]', // disabled
-        '[&>.au-tabs-trigger:hover]:text-[var(--dark-color)]', // hover
-        // selected
-        '[&>.au-tabs-trigger[data-state="active"]]:border-y-transparent [&>.au-tabs-trigger[data-state="active"]]:border-l-transparent',
-        '[&>.au-tabs-trigger[data-state="active"]]:border-r-[var(--dark-color)]',
-        '[&>.au-tabs-trigger[data-state="active"]]:bg-[var(--gray-color)] [&>.au-tabs-trigger[data-state="active"]]:text-[var(--dark-color)]',
-        // disabled and selected
-        '[&>button.au-tabs-trigger[data-disabled][data-state="active"]]:text-[var(--grayscale-200)] [&>button.au-tabs-trigger[data-disabled][data-state="active"]]:border-r-[var(--graycale-200)]',
-
-        // darkmode
-        '[&>button.au-tabs-trigger[data-disabled]]:dark:text-[var(--grayscale-300)]', // disabled
-        '[&>.au-tabs-trigger:hover]:dark:text-[var(--white-color)]', // hover
-        // selected
-        '[&>.au-tabs-trigger[data-state="active"]]:dark:border-r-[var(--white-color)]',
-        '[&>.au-tabs-trigger[data-state="active"]]:dark:bg-[var(--grayscale-400)] [&>.au-tabs-trigger[data-state="active"]]:dark:text-[var(--white-color)]',
-        // disabled and selected
-        '[&>button.au-tabs-trigger[data-disabled][data-state="active"]]:dark:text-[var(--grayscale-300)] [&>button.au-tabs-trigger[data-disabled][data-state="active"]]:dark:border-r-[var(--graycale-300)]',
-      ],
-      leftPrimaryUnderline: [
-        'bg-none [&>.au-tabs-trigger]:rounded-none',
-        '[&>.au-tabs-trigger]:bg-none [&>.au-tabs-trigger]:text-[var(--grayscale-200)]', // enabled
-        '[&>button.au-tabs-trigger[data-disabled]]:text-[var(--grayscale-100)]', // disabled
-        '[&>.au-tabs-trigger:hover]:text-[var(--primary-color)]', // hover
-        // selected
-        '[&>.au-tabs-trigger[data-state="active"]]:border-y-transparent [&>.au-tabs-trigger[data-state="active"]]:border-r-transparent',
-        '[&>.au-tabs-trigger[data-state="active"]]:border-l-[var(--primary-color-100)]',
-        '[&>.au-tabs-trigger[data-state="active"]]:text-[var(--primary-color)]',
-        // disabled and selected
-        '[&>button.au-tabs-trigger[data-disabled][data-state="active"]]:text-[var(--grayscale-200)] [&>button.au-tabs-trigger[data-disabled][data-state="active"]]:border-l-[var(--graycale-200)]',
-
-        // darkmode
-        '[&>button.au-tabs-trigger[data-disabled]]:dark:text-[var(--grayscale-300)]', // disabled
-        '[&>.au-tabs-trigger:hover]:dark:text-[var(--primary-color-100)]', // hover
-        // selected
-        '[&>.au-tabs-trigger[data-state="active"]]:dark:border-l-[var(--primary-color)]',
-        '[&>.au-tabs-trigger[data-state="active"]]:dark:text-[var(--primary-color-100)]',
-        // disabled and selected
-        '[&>button.au-tabs-trigger[data-disabled][data-state="active"]]:dark:text-[var(--grayscale-300)] [&>button.au-tabs-trigger[data-disabled][data-state="active"]]:dark:border-l-[var(--graycale-300)]',
-      ],
-      rightPrimaryUnderline: [
-        'bg-none [&>.au-tabs-trigger]:rounded-none',
-        '[&>.au-tabs-trigger]:bg-none [&>.au-tabs-trigger]:text-[var(--grayscale-200)]', // enabled
-        '[&>button.au-tabs-trigger[data-disabled]]:text-[var(--grayscale-100)]', // disabled
-        '[&>.au-tabs-trigger:hover]:text-[var(--primary-color)]', // hover
-        // selected
-        '[&>.au-tabs-trigger[data-state="active"]]:border-y-transparent [&>.au-tabs-trigger[data-state="active"]]:border-l-transparent',
-        '[&>.au-tabs-trigger[data-state="active"]]:border-r-[var(--primary-color-100)]',
-        '[&>.au-tabs-trigger[data-state="active"]]:text-[var(--primary-color)]',
-        // disabled and selected
-        '[&>button.au-tabs-trigger[data-disabled][data-state="active"]]:text-[var(--grayscale-200)] [&>button.au-tabs-trigger[data-disabled][data-state="active"]]:border-r-[var(--graycale-200)]',
-
-        // darkmode
-        '[&>button.au-tabs-trigger[data-disabled]]:dark:text-[var(--grayscale-300)]', // disabled
-        '[&>.au-tabs-trigger:hover]:dark:text-[var(--primary-color-100)]', // hover
-        // selected
-        '[&>.au-tabs-trigger[data-state="active"]]:dark:border-r-[var(--primary-color)]',
-        '[&>.au-tabs-trigger[data-state="active"]]:dark:text-[var(--primary-color-100)]',
-        // disabled and selected
-        '[&>button.au-tabs-trigger[data-disabled][data-state="active"]]:dark:text-[var(--grayscale-300)] [&>button.au-tabs-trigger[data-disabled][data-state="active"]]:dark:border-r-[var(--graycale-300)]',
+        '[&>button.au-tabs-trigger[data-disabled][data-state="active"]]:dark:text-grayscale-700 [&>button.au-tabs-trigger[data-disabled][data-state="active"]]:border-b-grayscale-500',
       ],
     },
     rounded: {
