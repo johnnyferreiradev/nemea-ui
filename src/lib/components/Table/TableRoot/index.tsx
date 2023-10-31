@@ -15,7 +15,7 @@ const TableRoot = forwardRef<HTMLTableElement, TableRootProps>(
       <table
         ref={ref}
         className={twMerge(
-          'w-full relative caption-bottom text-base text-[var(--dark-color)] dark:text-[var(--white-color)]',
+          'w-full relative caption-bottom text-base text-dark dark:text-light',
           tableClassName,
         )}
         {...props}

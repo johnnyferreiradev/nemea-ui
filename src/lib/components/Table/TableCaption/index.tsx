@@ -8,7 +8,7 @@ const TableCaption = forwardRef<HTMLTableCaptionElement, TableCaptionProps>(
     <caption
       ref={ref}
       className={twMerge(
-        'au-table-caption mt-4 text-sm font-medium text-[var(--grayscale-300)]',
+        'au-table-caption mt-4 text-sm font-medium text-grayscale-400',
         className,
       )}
       {...props}

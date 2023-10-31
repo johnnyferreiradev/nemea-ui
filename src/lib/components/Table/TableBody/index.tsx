@@ -8,7 +8,7 @@ const TableBody = forwardRef<HTMLTableSectionElement, TableBodyProps>(
     <tbody
       ref={ref}
       className={twMerge(
-        'au-table-body [&_tr:last-child]:border-0 [&_tr:last-child]:border-b-[var(--gray-color)]',
+        'au-table-body [&_tr:last-child]:border-0 [&_tr:last-child]:border-b-grayscale-50 dark:[&_tr:last-child]:border-b-grayscale-800',
         className,
       )}
       {...props}

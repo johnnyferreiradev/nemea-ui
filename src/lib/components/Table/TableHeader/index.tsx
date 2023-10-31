@@ -8,7 +8,7 @@ const TableHeader = forwardRef<HTMLTableSectionElement, TableHeaderProps>(
     <thead
       ref={ref}
       className={twMerge(
-        'au-table-header [&_tr]:border-b [&_tr]:border-b-[var(--gray-color)]',
+        'au-table-header [&_tr]:border-b [&_tr]:border-b-grayscale-50 dark:[&_tr]:border-b-grayscale-800',
         className,
       )}
       id={id}

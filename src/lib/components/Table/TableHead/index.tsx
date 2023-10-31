@@ -8,7 +8,7 @@ const TableHead = forwardRef<HTMLTableCellElement, TableHeadProps>(
     <th
       ref={ref}
       className={twMerge(
-        'au-table-head h-14 px-4 text-left align-middle font-medium [&:has([role=checkbox])]:pr-0',
+        'au-table-head h-14 px-4 text-left align-middle font-bold [&:has([role=checkbox])]:pr-0',
         className,
       )}
       {...props}

@@ -7,7 +7,7 @@ const TableFooter = forwardRef<HTMLTableSectionElement, TableFooterProps>(
   ({ className, ...props }, ref) => (
     <tfoot
       ref={ref}
-      className={twMerge('au-table-footer bg-primary font-medium', className)}
+      className={twMerge('au-table-footer font-medium', className)}
       {...props}
     />
   ),
