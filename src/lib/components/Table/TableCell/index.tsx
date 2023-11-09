@@ -8,7 +8,7 @@ const TableCell = forwardRef<HTMLTableCellElement, TableCellProps>(
     <td
       ref={ref}
       className={twMerge(
-        'au-table-cell p-4 align-middle [&:has([role=checkbox])]:pr-0 text-dark dark:text-light',
+        'au-table-cell p-2 align-middle [&:has([role=checkbox])]:pr-0 text-dark dark:text-light',
         className,
       )}
       {...props}
