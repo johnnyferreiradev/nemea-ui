@@ -9,7 +9,7 @@ const TableRow = forwardRef<HTMLTableRowElement, TableRowProps>(
       ref={ref}
       className={twMerge(
         'au-table-row border-b border-b-grayscale-50 dark:border-b-grayscale-800 transition-colors',
-        'hover:bg-grayscale-50 dark:hover:bg-grayscale-800',
+        'hover:bg-grayscale-50/30 dark:hover:bg-grayscale-800/30',
         'data-[state=selected]:bg-grayscale-100 dark:data-[state=selected]:bg-grayscale-700',
         className,
       )}
