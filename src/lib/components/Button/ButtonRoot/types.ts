@@ -71,6 +71,4 @@ export interface ButtonProps
   theme?: keyof typeof ButtonThemes;
   size?: keyof typeof ButtonSizes;
   align?: keyof typeof ButtonAligns;
-  disabled?: boolean;
-  children?: React.ReactNode;
 }
