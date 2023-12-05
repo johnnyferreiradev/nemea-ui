@@ -27,17 +27,17 @@ export default function ModalRoot({
       <Dialog.Portal>
         <Dialog.Overlay
           className={twMerge(
-            'au-modal w-screen h-screen bg-slate-400/20 dark:bg-slate-600/20 fixed inset-0',
-            'backdrop-blur-sm animate-fade-in overflow-y-scroll mb-16',
+            'au-modal w-screen h-screen bg-slate-400/20 fixed inset-0',
+            'backdrop-blur-sm animate-fade-in overflow-y-scroll mb-16 z-30',
             'default-scroll',
           )}
         >
           <Dialog.Content
             className={twMerge(
               'au-modal-content min-w-[300px]',
-              'bg-[var(--white-color)] dark:bg-[var(--grayscale-400)]',
+              'bg-light dark:bg-grayscale-900',
               'fixed top-0 left-1/2 -translate-x-1/2 my-16',
-              'p-8 outline-none rounded-md shadow-lg',
+              'p-4 outline-none rounded-md shadow-lg',
               'animate-content-show',
               contentClassName,
             )}
