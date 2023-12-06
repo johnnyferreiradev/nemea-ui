@@ -35,7 +35,7 @@ export default function AlertDialogRoot({
               'au-modal-content min-w-[300px]',
               'bg-light dark:bg-grayscale-900',
               'fixed left-1/2 -translate-x-1/2 my-16',
-              'p-4 outline-none rounded-md shadow-lg',
+              'p-6 outline-none rounded-md shadow-lg',
               'animate-content-show',
               contentClassName,
             )}

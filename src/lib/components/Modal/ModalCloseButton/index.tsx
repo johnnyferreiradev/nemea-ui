@@ -10,6 +10,7 @@ import { ModalCloseButtonProps } from './types';
 export default function ModalCloseButton({
   className = '',
   id,
+  onClose,
 }: ModalCloseButtonProps) {
   return (
     <Dialog.Close
@@ -20,7 +21,7 @@ export default function ModalCloseButton({
       id={id}
       asChild
     >
-      <Button.Root size="sm" theme="gray" className="w-8 h-8">
+      <Button.Root size="sm" theme="gray" className="w-8 h-8" onClick={onClose}>
         <Button.Label>
           <X weight="bold" />
         </Button.Label>
