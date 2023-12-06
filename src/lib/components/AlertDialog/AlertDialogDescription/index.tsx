@@ -12,8 +12,8 @@ export default function AlertDialogDescription({
   return (
     <AlertDialog.Description
       className={twMerge(
-        'au-alert-dialog-description text-lg leading-6',
-        'text-[var(--dark-color)] dark:text-[var(--white-color)]',
+        'au-alert-dialog-description text-base leading-5',
+        'text-grayscale-400',
         className,
       )}
       id={id}

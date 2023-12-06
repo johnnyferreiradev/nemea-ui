@@ -12,8 +12,8 @@ export default function AlertDialogTitle({
   return (
     <AlertDialog.Title
       className={twMerge(
-        'au-alert-dialog-title font-bold text-2xl leading-6',
-        'text-[var(--dark-color)] dark:text-[var(--white-color)]',
+        'au-alert-dialog-title font-bold text-xl leading-5',
+        'text-dark dark:text-light',
         className,
       )}
       id={id}
