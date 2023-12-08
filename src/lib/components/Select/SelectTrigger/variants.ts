@@ -30,11 +30,11 @@ export const triggerVariants = tv({
         'outline-tertiary-200 dark:outline-tertiary-400',
       ],
       gray: [
-        'bg-grayscale-100 text-dark',
+        'bg-grayscale-50 text-dark',
         'dark:bg-grayscale-800 dark:text-grayscale-50',
-        'border border-solid border-grayscale-100 dark:border-grayscale-800',
-        'hover:bg-grayscale-200 dark:hover:bg-grayscale-700',
-        'hover:border-grayscale-200 dark:hover:border-grayscale-700',
+        'border border-solid border-grayscale-50 dark:border-grayscale-800',
+        'hover:bg-grayscale-100 dark:hover:bg-grayscale-700',
+        'hover:border-grayscale-100 dark:hover:border-grayscale-700',
         'outline-grayscale-300 dark:outline-grayscale-400',
       ],
       success: [
