@@ -20,4 +20,5 @@ export interface InputProps
   size?: keyof typeof InputSizes;
   icon?: React.ReactNode;
   actions?: React.ReactNode;
+  asChild?: boolean;
 }

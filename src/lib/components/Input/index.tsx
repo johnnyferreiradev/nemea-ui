@@ -1,7 +1,8 @@
 import { forwardRef } from 'react';
 import { twMerge } from 'tailwind-merge';
+import { Slot } from '@radix-ui/react-slot';
 
-import { inputVariants, inputWrapperVatiants } from './variants';
+import { inputVariants, inputWrapperVariants } from './variants';
 
 import { InputProps } from './types';
 
@@ -15,20 +16,23 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
       disabled,
       icon,
       actions,
+      asChild,
       ...props
     },
     ref,
   ) => {
+    const Component = asChild ? Slot : 'input';
+
     return (
       <div
         className={twMerge(
-          inputWrapperVatiants({ size, theme }),
+          inputWrapperVariants({ size, theme }),
           disabled ? 'is-disabled' : '',
           className,
         )}
       >
         <span>{icon}</span>
-        <input
+        <Component
           type={type}
           className={twMerge(inputVariants({ size, theme }))}
           disabled={disabled}

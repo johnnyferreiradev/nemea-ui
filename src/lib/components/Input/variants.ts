@@ -1,6 +1,6 @@
 import { tv } from 'tailwind-variants';
 
-export const inputWrapperVatiants = tv({
+export const inputWrapperVariants = tv({
   base: [
     'am-input-wrapper flex items-center rounded-md border',
     '[&:has([aria-invalid="true"])]:border-failure-400',

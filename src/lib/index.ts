@@ -61,6 +61,7 @@ export { default as UploadArea } from './components/UploadArea';
 export { default as Text } from './components/Text';
 
 export { default as Input } from './components/Input';
+export type { InputProps } from './components/Input/types';
 
 export { default as Textarea } from './components/Textarea';
 
