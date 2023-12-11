@@ -2,7 +2,7 @@ import { tv } from 'tailwind-variants';
 
 export const tooltipContentVariants = tv({
   base: [
-    'au-tooltip-content rounded-md animate-fade-in-down shadow-lg outline-none',
+    'au-tooltip-content rounded-md animate-fade-in-down shadow-lg outline-none z-40',
   ],
   variants: {
     theme: {
