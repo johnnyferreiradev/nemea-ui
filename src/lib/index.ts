@@ -1,6 +1,7 @@
 'use client';
 
 export { Button } from './components/Button';
+export { ButtonThemes } from './components/Button/ButtonRoot/types';
 
 export { Alert } from './components/Alert';
 
