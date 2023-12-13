@@ -31,7 +31,7 @@ export default function SheetRoot({
         <Dialog.Overlay
           className={twMerge(
             'au-sheet-overlay w-screen h-screen bg-slate-400/20 fixed inset-0',
-            'backdrop-blur-sm animate-fade-in overflow-y-scroll mb-16 z-30',
+            'backdrop-blur-sm animate-fade-in overflow-y-auto mb-16 z-30',
             'default-scroll',
           )}
         >
