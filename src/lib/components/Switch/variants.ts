@@ -3,7 +3,7 @@ import { tv } from 'tailwind-variants';
 export const switchVariants = tv({
   base: [
     'au-switch relative rounded-full focus:outline-none',
-    'bg-grayscale-200 dark:bg-grayscale-900',
+    'bg-grayscale-100 dark:bg-grayscale-800',
     'transition will-change-transform duration-[0.4s]',
     'disabled:opacity-40',
   ],

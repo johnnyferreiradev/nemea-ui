@@ -2,19 +2,19 @@ import { tv } from 'tailwind-variants';
 
 export const tooltipContentVariants = tv({
   base: [
-    'au-tooltip-content rounded-md animate-fade-in-down shadow-lg outline-none',
+    'au-tooltip-content rounded-md animate-fade-in-down shadow-lg outline-none z-40',
   ],
   variants: {
     theme: {
-      white: [
-        'bg-[var(--white-color)] dark:bg-[var(--grayscale-400)]',
-        '[&_.au-tooltip-arrow]:fill-[var(--white-color)]',
-        'dark:[&_.au-tooltip-arrow]:fill-[var(--grayscale-400)]',
+      light: [
+        'bg-light dark:bg-grayscale-950',
+        '[&_.au-tooltip-arrow]:fill-light',
+        'dark:[&_.au-tooltip-arrow]:fill-grayscale-900',
       ],
       dark: [
-        'bg-[var(--grayscale-400)] dark:bg-[var(--white-color)]',
-        '[&_.au-tooltip-arrow]:fill-[var(--grayscale-400)]',
-        'dark:[&_.au-tooltip-arrow]:fill-[var(--white-color)]',
+        'bg-grayscale-950 dark:bg-light',
+        '[&_.au-tooltip-arrow]:fill-grayscale-900',
+        'dark:[&_.au-tooltip-arrow]:fill-light',
       ],
     },
   },

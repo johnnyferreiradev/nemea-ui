@@ -12,8 +12,8 @@ export default function ModalDescription({
   return (
     <Dialog.Description
       className={twMerge(
-        'au-modal-description text-lg leading-6',
-        'text-[var(--dark-color)] dark:text-[var(--white-color)]',
+        'au-modal-description text-base leading-5',
+        'text-grayscale-400',
         className,
       )}
       id={id}

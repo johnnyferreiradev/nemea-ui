@@ -1,4 +1,7 @@
+'use client';
+
 export { Button } from './components/Button';
+export { ButtonThemes } from './components/Button/ButtonRoot/types';
 
 export { Alert } from './components/Alert';
 
@@ -59,8 +62,13 @@ export { default as UploadArea } from './components/UploadArea';
 export { default as Text } from './components/Text';
 
 export { default as Input } from './components/Input';
+export type { InputProps } from './components/Input/types';
 
 export { default as Textarea } from './components/Textarea';
 
 export { default as Calendar } from './components/Calendar';
 export type { DateRange } from './components/Calendar/types';
+
+export { default as PaginationControl } from './components/PaginationControl';
+
+export { Sheet } from './components/Sheet';

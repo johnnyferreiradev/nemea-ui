@@ -25,17 +25,17 @@ export default function AlertDialogRoot({
       <AlertDialog.Portal>
         <AlertDialog.Overlay
           className={twMerge(
-            'au-modal w-screen h-screen bg-slate-400/20 dark:bg-slate-600/20 fixed inset-0',
-            'backdrop-blur-sm animate-fade-in overflow-y-scroll',
+            'au-modal w-screen h-screen bg-slate-400/20 fixed inset-0',
+            'backdrop-blur-sm animate-fade-in overflow-y-scroll z-30',
             'default-scroll',
           )}
         >
           <AlertDialog.Content
             className={twMerge(
               'au-modal-content min-w-[300px]',
-              'bg-[var(--white-color)] dark:bg-[var(--grayscale-400)]',
+              'bg-light dark:bg-grayscale-900',
               'fixed left-1/2 -translate-x-1/2 my-16',
-              'p-8 outline-none rounded-md shadow-lg',
+              'p-6 outline-none rounded-md shadow-lg',
               'animate-content-show',
               contentClassName,
             )}

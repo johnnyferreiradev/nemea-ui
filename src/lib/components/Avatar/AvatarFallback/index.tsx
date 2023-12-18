@@ -11,8 +11,8 @@ export default function AvatarFallback({
     <RadixAvatar.Fallback
       className={twMerge(
         'au-avatar-fallback w-12 h-12 rounded-full inline-block p-2',
-        'flex items-center justify-center font-normal',
-        'text-xl bg-[var(--primary-color-100)] text-[var(--primary-color)]',
+        'flex items-center justify-center font-medium',
+        'text-xl bg-primary-300 text-light dark:bg-primary-800',
         className,
       )}
     >

@@ -22,8 +22,9 @@ const ToasterClose = forwardRef<
   >
     <X
       className={twMerge(
-        'group-hover/toaster-close:bg-grayscale-100 rounded p-1 text-xl',
+        'rounded p-1 text-xl',
         'h-max w-max translate-y-[2px] translate-x-1',
+        'group-hover/toaster-close:bg-grayscale-100 dark:group-hover/toaster-close:bg-grayscale-900',
       )}
     />
   </RadixToast.Close>

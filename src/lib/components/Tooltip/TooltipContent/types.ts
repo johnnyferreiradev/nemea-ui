@@ -4,6 +4,6 @@ export interface TooltipContentProps extends RadixTooltipContentProps {
   className?: string;
   id?: string;
   children?: React.ReactNode;
-  theme?: 'white' | 'dark';
+  theme?: 'light' | 'dark';
   side?: 'top' | 'right' | 'bottom' | 'left';
 }

@@ -2,8 +2,8 @@ import { tv } from 'tailwind-variants';
 
 export const toasterRoot = tv({
   base: [
-    'au-toaster-root bg-light',
-    'dark:bg-grayscale-700 p-4 pt-[18px] rounded-lg outline-none',
+    'au-toaster-root bg-light w-full',
+    'dark:bg-grayscale-800 p-4 pt-[18px] rounded-lg outline-none',
     'shadow-md',
     'data-[state="closed"]:animate-fade-out',
     'data-[swipe="cancel"]:transition-transform',
@@ -45,8 +45,8 @@ export const toasterRoot = tv({
         '[&>.au-toaster-icon]:text-success-500',
       ],
       failure: [
-        'border-x-4 border-x-failure-600 border-r-0',
-        '[&>.au-toaster-icon]:text-failure-600',
+        'border-x-4 border-x-failure-500 border-r-0',
+        '[&>.au-toaster-icon]:text-failure-500',
       ],
       warning: [
         'border-x-4 border-x-warning-400 border-r-0',
@@ -59,7 +59,7 @@ export const toasterRoot = tv({
 export const toasterViewport = tv({
   base: [
     'outline-none fixed flex flex-col p-4 translate-x-0',
-    'gap-3 max-w-full z-50',
+    'gap-3 w-full max-w-max z-50',
   ],
   variants: {
     position: {
