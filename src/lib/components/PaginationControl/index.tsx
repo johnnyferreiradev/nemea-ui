@@ -3,7 +3,7 @@ import ReactPaginate from 'react-paginate';
 
 import { PaginationControlProps } from './types';
 
-export default function PaginationControl({
+const PaginationControl = ({
   className = '',
   onPageChange,
   pageRangeDisplayed = 1,
@@ -12,7 +12,7 @@ export default function PaginationControl({
   breakLabel,
   nextLabel,
   previousLabel,
-}: PaginationControlProps) {
+}: PaginationControlProps) => {
   return (
     <ReactPaginate
       className={twMerge(
@@ -31,7 +31,7 @@ export default function PaginationControl({
         'dark:text-light [&>a]:dark:outline-grayscale-700',
       )}
       breakClassName={twMerge(
-        '[&>a]:h-9 [&>a]:w-9 [&>a]:flex [&>a]:items-center [&>a]:justify-center [&>a]:outline-grayscale-100',
+        'mx-0.5 [&>a]:h-9 [&>a]:w-9 [&>a]:flex [&>a]:items-center [&>a]:justify-center [&>a]:outline-grayscale-100',
         '[&>a]:rounded-md [&>a]:bg-grayscale-50 [&>a:hover]:bg-grayscale-100',
         '[&>a]:dark:text-light [&>a]:dark:bg-grayscale-800 [&>a]:dark:hover:bg-grayscale-700 [&>a]:dark:outline-grayscale-700',
       )}
@@ -58,4 +58,6 @@ export default function PaginationControl({
       nextLabel={nextLabel}
     />
   );
-}
+};
+
+export default PaginationControl;

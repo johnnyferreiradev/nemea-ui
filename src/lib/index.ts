@@ -72,6 +72,6 @@ export { default as Textarea } from './components/Textarea';
 export { default as Calendar } from './components/Calendar';
 export type { DateRange } from './components/Calendar/types';
 
-export { default as PaginationControl } from './components/PaginationControl';
-
 export { Sheet } from './components/Sheet';
+
+export { default as PaginationControl } from './components/PaginationControl';
