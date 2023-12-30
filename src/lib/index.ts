@@ -75,3 +75,5 @@ export type { DateRange } from './components/Calendar/types';
 export { Sheet } from './components/Sheet';
 
 export { default as PaginationControl } from './components/PaginationControl';
+
+export { Command } from './components/Command';
