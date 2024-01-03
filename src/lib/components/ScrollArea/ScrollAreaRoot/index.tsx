@@ -4,16 +4,20 @@ import { twMerge } from 'tailwind-merge';
 
 import { ScrollBar } from '../ScrollBar';
 
+import { ScrollAreaProps } from './types';
+
 export const ScrollAreaRoot = forwardRef<
-  React.ElementRef<typeof ScrollAreaPrimitive.Root>,
-  React.ComponentPropsWithoutRef<typeof ScrollAreaPrimitive.Root>
+  React.ElementRef<ScrollAreaProps>,
+  React.ComponentPropsWithoutRef<ScrollAreaProps>
 >(({ className, children, ...props }, ref) => (
   <ScrollAreaPrimitive.Root
-    ref={ref}
     className={twMerge('relative overflow-hidden', className)}
     {...props}
   >
-    <ScrollAreaPrimitive.Viewport className="h-full w-full rounded-[inherit]">
+    <ScrollAreaPrimitive.Viewport
+      className="h-full w-full rounded-[inherit]"
+      ref={ref}
+    >
       {children}
     </ScrollAreaPrimitive.Viewport>
     <ScrollBar />

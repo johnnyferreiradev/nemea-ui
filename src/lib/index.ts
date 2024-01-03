@@ -4,6 +4,7 @@ export { Button } from './components/Button';
 export {
   ButtonThemes,
   type ButtonProps,
+  ButtonSizes,
 } from './components/Button/ButtonRoot/types';
 
 export { Alert } from './components/Alert';
@@ -77,3 +78,7 @@ export { Sheet } from './components/Sheet';
 export { default as PaginationControl } from './components/PaginationControl';
 
 export { Command } from './components/Command';
+
+export { ScrollArea } from './components/ScrollArea';
+export { type ScrollAreaProps } from './components/ScrollArea/ScrollAreaRoot/types';
+export { type ScrollBarProps } from './components/ScrollArea/ScrollBar/types';

@@ -2,9 +2,11 @@ import React from 'react';
 import * as ScrollAreaPrimitive from '@radix-ui/react-scroll-area';
 import { twMerge } from 'tailwind-merge';
 
+import { ScrollBarProps } from './types';
+
 export const ScrollBar = React.forwardRef<
-  React.ElementRef<typeof ScrollAreaPrimitive.ScrollAreaScrollbar>,
-  React.ComponentPropsWithoutRef<typeof ScrollAreaPrimitive.ScrollAreaScrollbar>
+  React.ElementRef<ScrollBarProps>,
+  React.ComponentPropsWithoutRef<ScrollBarProps>
 >(({ className, orientation = 'vertical', ...props }, ref) => (
   <ScrollAreaPrimitive.ScrollAreaScrollbar
     ref={ref}
