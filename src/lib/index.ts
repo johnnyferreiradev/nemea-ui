@@ -16,6 +16,10 @@ export { default as Image } from './components/Image';
 export { default as ImagePlaceholder } from './components/ImagePlaceholder';
 
 export { Toaster } from './components/Toaster';
+export {
+  ToasterRootPositions,
+  ToasterRootThemes,
+} from './components/Toaster/ToasterRoot/types';
 
 export { Dropdown } from './components/Dropdown';
 
