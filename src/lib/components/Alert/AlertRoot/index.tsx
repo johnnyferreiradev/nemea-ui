@@ -13,39 +13,39 @@ const alertRoot = tv({
   variants: {
     theme: {
       success: [
-        'bg-success-200 border border-solid border-success-200',
+        'bg-success-200/40 border border-solid border-success-200/40',
         '[&>.au-alert-icon]:text-success-800',
         '[&>.au-alert-content>.au-alert-title]:text-success-800',
         '[&>.au-alert-content>.au-alert-description]:text-success-800',
         '[&>.au-alert-close>.au-alert-close-button]:text-success-800',
 
-        'dark:bg-grayscale-800 dark:border-grayscale-800',
+        'dark:bg-grayscale-800/40 dark:border-grayscale-800/40',
         'dark:[&>.au-alert-icon]:text-success-300',
         'dark:[&>.au-alert-content>.au-alert-title]:text-success-300',
         'dark:[&>.au-alert-content>.au-alert-description]:text-success-300',
         'dark:[&>.au-alert-close>.au-alert-close-button]:text-success-300',
       ],
       failure: [
-        'bg-failure-200 border border-solid border-failure-200',
+        'bg-failure-200/40 border border-solid border-failure-200/40',
         '[&>.au-alert-icon]:text-failure-800',
         '[&>.au-alert-content>.au-alert-title]:text-failure-800',
         '[&>.au-alert-content>.au-alert-description]:text-failure-800',
         '[&>.au-alert-close>.au-alert-close-button]:text-failure-800',
 
-        'dark:bg-grayscale-800 dark:border-grayscale-800',
+        'dark:bg-grayscale-800/40 dark:border-grayscale-800/40',
         'dark:[&>.au-alert-icon]:text-failure-300',
         'dark:[&>.au-alert-content>.au-alert-title]:text-failure-300',
         'dark:[&>.au-alert-content>.au-alert-description]:text-failure-300',
         'dark:[&>.au-alert-close>.au-alert-close-button]:text-failure-300',
       ],
       warning: [
-        'bg-warning-200 border border-solid border-warning-200',
+        'bg-warning-200/40 border border-solid border-warning-200/40',
         '[&>.au-alert-icon]:text-warning-800',
         '[&>.au-alert-content>.au-alert-title]:text-warning-800',
         '[&>.au-alert-content>.au-alert-description]:text-warning-800',
         '[&>.au-alert-close>.au-alert-close-button]:text-warning-800',
 
-        'dark:bg-grayscale-800 dark:border-grayscale-800',
+        'dark:bg-grayscale-800/40 dark:border-grayscale-800/40',
         'dark:[&>.au-alert-icon]:text-warning-300',
         'dark:[&>.au-alert-content>.au-alert-title]:text-warning-300',
         'dark:[&>.au-alert-content>.au-alert-description]:text-warning-300',
