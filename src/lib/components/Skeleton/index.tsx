@@ -13,7 +13,7 @@ export default function Skeleton({
   return (
     <div
       className={twMerge(
-        'au-skeleton animate-pulse bg-grayscale-200 dark:bg-grayscale-900',
+        'au-skeleton animate-pulse bg-grayscale-200 dark:bg-grayscale-700',
         rounded ? 'rounded-full' : 'rounded-md',
         className,
       )}
