@@ -15,6 +15,7 @@ const DropdownItem = forwardRef<
       'outline-none cursor-pointer transition rounded-md',
       'text-base text-start',
       'data-[disabled]:cursor-default',
+      'data-[disabled]:opacity-40',
       inset && 'pl-8',
       className,
     )}
