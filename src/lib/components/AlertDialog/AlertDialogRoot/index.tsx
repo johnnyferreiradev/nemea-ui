@@ -27,7 +27,7 @@ export default function AlertDialogRoot({
           className={twMerge(
             'au-modal w-screen h-screen bg-slate-400/20 fixed inset-0',
             'backdrop-blur-sm animate-fade-in overflow-y-scroll z-30',
-            'default-scroll',
+            'default-scroll p-4',
           )}
         >
           <AlertDialog.Content
