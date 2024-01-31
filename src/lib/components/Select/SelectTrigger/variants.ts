@@ -31,6 +31,7 @@ export const triggerVariants = tv({
       ],
       gray: [
         'bg-grayscale-50 text-dark',
+        'data-[placeholder]:text-grayscale-400 dark:data-[placeholder]:text-grayscale-400',
         'dark:bg-grayscale-800 dark:text-grayscale-50',
         'border border-solid border-grayscale-50 dark:border-grayscale-800',
         'hover:bg-grayscale-100 dark:hover:bg-grayscale-700',
@@ -57,6 +58,7 @@ export const triggerVariants = tv({
       ],
       dark: [
         'bg-dark text-light',
+        'data-[placeholder]:text-grayscale-400 dark:data-[placeholder]:text-grayscale-400',
         'dark:bg-light dark:text-dark',
         'hover:bg-grayscale-900 dark:hover:bg-grayscale-100',
         'border border-solid border-dark hover:border-grayscale-900',
@@ -65,6 +67,7 @@ export const triggerVariants = tv({
       ],
       light: [
         'bg-light text-dark',
+        'data-[placeholder]:text-grayscale-400 dark:data-[placeholder]:text-grayscale-400',
         'dark:bg-dark dark:text-light',
         'hover:bg-grayscale-100 dark:hover:bg-grayscale-900',
         'border border-solid border-light hover:border-grayscale-100',
@@ -92,6 +95,7 @@ export const triggerVariants = tv({
       ],
       linkGray: [
         'bg-none text-grayscale-600 dark:text-grayscale-500',
+        'data-[placeholder]:text-grayscale-400 dark:data-[placeholder]:text-grayscale-400',
         'hover:text-grayscale-700 dark:hover:text-grayscale-600',
         'outline-grayscale-700',
         'disabled:text-gray-400',
@@ -116,6 +120,7 @@ export const triggerVariants = tv({
       ],
       linkDark: [
         'bg-none text-dark',
+        'data-[placeholder]:text-grayscale-400 dark:data-[placeholder]:text-grayscale-400',
         'hover:text-grayscale-900',
         'dark:text-light dark:hover:text-grayscale-300',
         'outline-dark dark:outline-grayscale-300',
@@ -123,6 +128,7 @@ export const triggerVariants = tv({
       ],
       linkLight: [
         'bg-none text-light',
+        'data-[placeholder]:text-grayscale-400 dark:data-[placeholder]:text-grayscale-400',
         'hover:text-grayscale-300',
         'dark:text-dark dark:hover:text-grayscale-900',
         'outline-grayscale-300 dark:outline-dark',
@@ -152,6 +158,7 @@ export const triggerVariants = tv({
       ],
       grayFlat: [
         'bg-none text-grayscale-600 border border-solid border-transparent dark:text-grayscale-500',
+        'data-[placeholder]:text-grayscale-400 dark:data-[placeholder]:text-grayscale-400',
         'hover:bg-grayscale-50 dark:hover:bg-grayscale-800',
         'hover:border border-solid hover:border-grayscale-50',
         'dark:hover:border-grayscale-800',
@@ -181,6 +188,7 @@ export const triggerVariants = tv({
       ],
       darkFlat: [
         'bg-none text-dark border border-solid border-transparent dark:text-light',
+        'data-[placeholder]:text-grayscale-400 dark:data-[placeholder]:text-grayscale-400',
         'hover:bg-grayscale-50 dark:hover:bg-grayscale-800',
         'hover:border border-solid hover:border-grayscale-50',
         'dark:hover:border-grayscale-800 dark:text-light',
@@ -189,6 +197,7 @@ export const triggerVariants = tv({
       ],
       lightFlat: [
         'bg-none text-light border border-solid border-transparent dark:text-dark',
+        'data-[placeholder]:text-grayscale-400 dark:data-[placeholder]:text-grayscale-400',
         'hover:bg-grayscale-50 dark:hover:bg-grayscale-800',
         'hover:border border-solid hover:border-grayscale-50',
         'dark:hover:border-grayscale-800 dark:text-dark',
@@ -215,10 +224,11 @@ export const triggerVariants = tv({
         'outline-tertiary-700',
       ],
       outlineGray: [
-        'bg-none text-[var(--grayscale-color-400)]',
-        'border border-solid border-[var(--grayscale-color-400)]',
+        'bg-none text-dark',
+        'data-[placeholder]:text-grayscale-400 dark:data-[placeholder]:text-grayscale-400',
+        'border border-solid border-dark',
         'hover:bg-grayscale-50 dark:hover:bg-grayscale-800',
-        'outline-[var(--grayscale-color-400)]',
+        'outline-dark',
       ],
       outlineSuccess: [
         'bg-none text-success-600',
@@ -240,6 +250,7 @@ export const triggerVariants = tv({
       ],
       outlineDark: [
         'bg-none text-dark',
+        'data-[placeholder]:text-grayscale-400 dark:data-[placeholder]:text-grayscale-400',
         'border border-solid border-dark dark:border-light',
         'hover:bg-grayscale-50 dark:hover:bg-grayscale-800',
         'dark:text-light',
@@ -247,6 +258,7 @@ export const triggerVariants = tv({
       ],
       outlineLight: [
         'bg-none text-light',
+        'data-[placeholder]:text-grayscale-400 dark:data-[placeholder]:text-grayscale-400',
         'border border-solid border-light dark:border-dark',
         'hover:bg-grayscale-50 dark:hover:bg-grayscale-800',
         'dark:text-dark',
@@ -315,6 +327,7 @@ export const triggerVariants = tv({
       ],
       grayDark: [
         'bg-none text-dark dark:text-light',
+        'data-[placeholder]:text-grayscale-400 dark:data-[placeholder]:text-grayscale-400',
         'bg-grayscale-50 dark:bg-grayscale-800',
         'hover:bg-grayscale-200 dark:hover:bg-grayscale-700',
         'active:bg-dark active:text-light',
@@ -325,6 +338,7 @@ export const triggerVariants = tv({
       ],
       grayLight: [
         'bg-none text-light dark:text-dark',
+        'data-[placeholder]:text-grayscale-400 dark:data-[placeholder]:text-grayscale-400',
         'bg-grayscale-50 dark:bg-grayscale-800',
         'hover:bg-grayscale-200 dark:hover:bg-grayscale-700',
         'active:bg-light active:text-dark',

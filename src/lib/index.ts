@@ -1,7 +1,11 @@
 'use client';
 
 export { Button } from './components/Button';
-export { ButtonThemes } from './components/Button/ButtonRoot/types';
+export {
+  ButtonThemes,
+  type ButtonProps,
+  ButtonSizes,
+} from './components/Button/ButtonRoot/types';
 
 export { Alert } from './components/Alert';
 
@@ -12,6 +16,10 @@ export { default as Image } from './components/Image';
 export { default as ImagePlaceholder } from './components/ImagePlaceholder';
 
 export { Toaster } from './components/Toaster';
+export {
+  ToasterRootPositions,
+  ToasterRootThemes,
+} from './components/Toaster/ToasterRoot/types';
 
 export { Dropdown } from './components/Dropdown';
 
@@ -65,10 +73,17 @@ export { default as Input } from './components/Input';
 export type { InputProps } from './components/Input/types';
 
 export { default as Textarea } from './components/Textarea';
+export { type TextareaProps } from './components/Textarea/types';
 
 export { default as Calendar } from './components/Calendar';
 export type { DateRange } from './components/Calendar/types';
 
+export { Sheet } from './components/Sheet';
+
 export { default as PaginationControl } from './components/PaginationControl';
 
-export { Sheet } from './components/Sheet';
+export { Command } from './components/Command';
+
+export { ScrollArea } from './components/ScrollArea';
+export { type ScrollAreaProps } from './components/ScrollArea/ScrollAreaRoot/types';
+export { type ScrollBarProps } from './components/ScrollArea/ScrollBar/types';

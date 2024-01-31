@@ -1,7 +1,7 @@
 import { tv } from 'tailwind-variants';
 
 export const popoverContentVariants = tv({
-  base: ['rounded-md animate-fade-in-down shadow-lg outline-none'],
+  base: ['rounded-md animate-fade-in-down shadow-lg outline-none z-40'],
   variants: {
     theme: {
       light: [

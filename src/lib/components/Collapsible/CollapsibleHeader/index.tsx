@@ -12,15 +12,15 @@ export default function CollapsibleHeader({
   return (
     <div
       className={twMerge(
-        'au-collapsible-header border-solid border border-b-[grayscale-100]',
-        'border-t-0 border-l-0 border-r-0 dark:border-b-[grayscale-300]',
+        'au-collapsible-header border-solid border border-b-grayscale-100',
+        'border-t-0 border-l-0 border-r-0 dark:border-b-grayscale-800',
         className,
       )}
       id={id}
     >
       <RadixCollapsible.Trigger
         asChild={asChild}
-        className="outline-[var(--grayscale-100)] w-full text-start"
+        className="outline-grayscale-100 w-full text-start"
       >
         {children}
       </RadixCollapsible.Trigger>

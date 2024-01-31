@@ -49,7 +49,7 @@ export enum ButtonThemes {
   grayLight = 'grayLight',
 }
 
-enum ButtonSizes {
+export enum ButtonSizes {
   xs = 'xs',
   sm = 'sm',
   md = 'md',

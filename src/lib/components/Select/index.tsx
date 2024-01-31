@@ -5,12 +5,11 @@ import SelectLabel from './SelectLabel';
 import SelectSeparator from './SelectSeparator';
 import SelectContent from './SelectContent';
 import SelectTrigger from './SelectTrigger';
+import SelectValue from './SelectValue';
 
 const SelectRoot = RadixSelect.Root;
 
 const SelectGroup = RadixSelect.Group;
-
-const SelectValue = RadixSelect.Value;
 
 export const Select = {
   Root: SelectRoot,

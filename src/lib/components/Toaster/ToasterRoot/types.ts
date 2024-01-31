@@ -1,4 +1,4 @@
-enum ToasterRootThemes {
+export enum ToasterRootThemes {
   primary = 'primary',
   secondary = 'secondary',
   tertiary = 'tertiary',
@@ -7,7 +7,7 @@ enum ToasterRootThemes {
   warning = 'warning',
 }
 
-enum ToasterRootPositions {
+export enum ToasterRootPositions {
   'top-right' = 'top-right',
   'top-center' = 'top-center',
   'top-left' = 'top-left',

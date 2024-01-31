@@ -34,7 +34,7 @@ export default function ModalRoot({
         >
           <Dialog.Content
             className={twMerge(
-              'au-modal-content min-w-[300px] w-full md:!w-max h-screen md:!h-auto',
+              'au-modal-content min-w-[300px] w-full md:!w-max h-full md:!h-auto',
               'bg-light dark:bg-grayscale-900',
               'fixed top-0 left-1/2 -translate-x-1/2 m-0 md:!my-16',
               'p-6 outline-none rounded-none md:!rounded-md shadow-lg',
