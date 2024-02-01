@@ -9,7 +9,8 @@ export const toasterRoot = tv({
     'data-[swipe="cancel"]:transition-transform',
     'data-[swipe="cancel"]:duration-200 data-[swipe="cancel"]:ease-[ease-out]',
     'grid grid-rows-[max-content_max-content] grid-cols-[max-content_auto_max-content] gap-4 gap-y-1',
-    'items-center border border-solid border-y-0',
+    'items-center border-l-4 border-solid border-y-transparent border-r-transparent',
+    'border-r-1 border-y-1',
 
     'data-[swipe-direction="right"]:data-[state="open"]:animate-slide-in-right',
     'data-[swipe-direction="left"]:data-[state="open"]:animate-slide-in-left',
@@ -29,28 +30,28 @@ export const toasterRoot = tv({
   variants: {
     theme: {
       primary: [
-        'border-x-4 border-x-primary-600 border-r-0',
+        'border-l-4 border-l-primary-600',
         '[&>.au-toaster-icon]:text-primary-600',
       ],
       secondary: [
-        'border-x-4 border-x-secondary-600 border-r-0',
+        'border-l-4 border-l-secondary-600',
         '[&>.au-toaster-icon]:text-secondary-600',
       ],
       tertiary: [
-        'border-x-4 border-x-tertiary-600 border-r-0',
+        'border-l-4 border-l-tertiary-600',
         '[&>.au-toaster-icon]:text-tertiary-600',
       ],
       success: [
-        'border-x-4 border-x-success-500 border-r-0',
+        'border-l-4 border-l-success-500',
         '[&>.au-toaster-icon]:text-success-500',
       ],
       failure: [
-        'border-x-4 border-x-failure-500 border-r-0',
+        'border-l-4 border-l-failure-500',
         '[&>.au-toaster-icon]:text-failure-500',
       ],
       warning: [
-        'border-x-4 border-x-warning-400 border-r-0',
-        '[&>.au-toaster-icon]:text-warning-400 [&>.au-toaster-icon]:bg-[var(--warning-color)]',
+        'border-l-4 border-l-warning-400',
+        '[&>.au-toaster-icon]:text-warning-400 [&>.au-toaster-icon]:bg-warning-400',
       ],
     },
   },
