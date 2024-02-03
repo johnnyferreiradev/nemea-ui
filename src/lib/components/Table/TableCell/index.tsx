@@ -9,6 +9,7 @@ const TableCell = forwardRef<HTMLTableCellElement, TableCellProps>(
       ref={ref}
       className={twMerge(
         'au-table-cell p-2 align-middle [&:has([role=checkbox])]:pr-0 text-dark dark:text-light',
+        'break-words hyphens-auto',
         className,
       )}
       {...props}

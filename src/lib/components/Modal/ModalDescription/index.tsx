@@ -13,7 +13,7 @@ export default function ModalDescription({
     <Dialog.Description
       className={twMerge(
         'au-modal-description text-base leading-5',
-        'text-grayscale-400',
+        'text-grayscale-400 break-words hyphens-auto',
         className,
       )}
       id={id}
