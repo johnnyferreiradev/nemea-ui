@@ -1,6 +1,6 @@
 @import 'tailwindcss/base';
-@import './globals.css';
 
 @import 'tailwindcss/components';
+@import './globals.css';
 
 @import 'tailwindcss/utilities';

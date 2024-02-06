@@ -12,7 +12,7 @@ export default function ModalTitle({
   return (
     <Dialog.Title
       className={twMerge(
-        'au-modal-title font-bold text-xl leading-5',
+        'au-modal-title font-bold text-xl leading-5 break-words hyphens-auto',
         'text-dark dark:text-light',
         className,
       )}
