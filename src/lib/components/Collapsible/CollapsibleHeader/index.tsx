@@ -12,8 +12,8 @@ export default function CollapsibleHeader({
   return (
     <div
       className={twMerge(
-        'au-collapsible-header border-solid border border-b-grayscale-100',
-        'border-t-0 border-l-0 border-r-0 dark:border-b-grayscale-800',
+        'au-collapsible-header border-solid border-b border-b-grayscale-100 dark:border-b-grayscale-800',
+        'border-t-transparent border-l-transparent border-r-transparent ',
         className,
       )}
       id={id}
