@@ -40,14 +40,14 @@ const PaginationControl = ({
         '[&>a]:text-primary-500 [&>a]:rounded-md [&>a]:bg-grayscale-50 [&>a]:hover:bg-grayscale-100 [&>a]:text-lg',
         '[&>a_i]:leading-4 [&.disabled>a]:opacity-40 [&.disabled>a]:cursor-auto',
         '[&>a]:dark:text-light [&>a]:dark:bg-grayscale-800 [&>a]:dark:hover:bg-grayscale-700 [&>a]:dark:outline-grayscale-700',
-        '[&.disabled_a]:hover:!bg-grayscale-50 [&.disabled_a]:dark:hover:!bg-grayscale-800 [&>a[aria-disabled="true"]_i]:dark:text-grayscale-700',
+        '[&.disabled_a]:hover:bg-grayscale-50 [&.disabled_a]:dark:hover:bg-grayscale-800 [&>a[aria-disabled="true"]_i]:dark:text-grayscale-700',
       )}
       previousClassName={twMerge(
         'mr-0.5 [&>a]:h-9 [&>a]:w-9 [&>a]:flex [&>a]:items-center [&>a]:justify-center [&>a]:outline-grayscale-100',
         '[&>a]:text-primary-500 [&>a]:rounded-md [&>a]:bg-grayscale-50 [&>a]:hover:bg-grayscale-100 [&>a]:text-lg',
         '[&>a_i]:leading-4 [&.disabled>a]:opacity-40 [&.disabled>a]:cursor-auto',
         '[&>a]:dark:text-light [&>a]:dark:bg-grayscale-800 [&>a]:dark:hover:bg-grayscale-700 [&>a]:dark:outline-grayscale-700',
-        '[&.disabled_a]:hover:!bg-grayscale-50 [&.disabled_a]:dark:hover:!bg-grayscale-800 [&>a[aria-disabled="true"]_i]:dark:text-grayscale-700',
+        '[&.disabled_a]:hover:bg-grayscale-50 [&.disabled_a]:dark:hover:bg-grayscale-800 [&>a[aria-disabled="true"]_i]:dark:text-grayscale-700',
       )}
       onPageChange={onPageChange}
       forcePage={page}

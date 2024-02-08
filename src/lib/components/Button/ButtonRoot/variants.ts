@@ -12,60 +12,60 @@ export const buttonVariants = tv({
   variants: {
     theme: {
       primary: [
-        '!bg-primary-600 text-light',
+        'bg-primary-600 text-light',
         'border border-solid border-primary-600',
         'hover:bg-primary-700 hover:border-primary-700',
         'outline-primary-200 dark:outline-primary-400',
       ],
       secondary: [
-        '!bg-secondary-600 text-light',
+        'bg-secondary-600 text-light',
         'border border-solid border-secondary-600',
         'hover:bg-secondary-700 hover:border-secondary-700',
         'outline-secondary-200 dark:outline-secondary-400',
       ],
       tertiary: [
-        '!bg-tertiary-600 text-light',
+        'bg-tertiary-600 text-light',
         'border border-solid border-tertiary-600',
         'hover:bg-tertiary-700 hover:border-tertiary-700',
         'outline-tertiary-200 dark:outline-tertiary-400',
       ],
       gray: [
-        '!bg-grayscale-100 text-dark',
-        'dark:!bg-grayscale-800 dark:text-grayscale-50',
+        'bg-grayscale-100 text-dark',
+        'dark:bg-grayscale-800 dark:text-grayscale-50',
         'border border-solid border-grayscale-100 dark:border-grayscale-800',
         'hover:bg-grayscale-200 dark:hover:bg-grayscale-700',
         'hover:border-grayscale-200 dark:hover:border-grayscale-700',
         'outline-grayscale-300 dark:outline-grayscale-400',
       ],
       success: [
-        '!bg-success-600 text-light',
+        'bg-success-600 text-light',
         'border border-solid border-success-600',
         'hover:bg-success-700 hover:border-success-700',
         'outline-success-200 dark:outline-success-400',
       ],
       failure: [
-        '!bg-failure-600 text-light',
+        'bg-failure-600 text-light',
         'border border-solid border-failure-600',
         'hover:bg-failure-700 hover:border-failure-700',
         'outline-failure-200 dark:outline-failure-400',
       ],
       warning: [
-        '!bg-warning-500 text-light',
+        'bg-warning-500 text-light',
         'border border-solid border-warning-500',
         'hover:bg-warning-600 hover:border-warning-600',
         'outline-warning-200 dark:outline-warning-400',
       ],
       dark: [
-        '!bg-dark text-light',
-        'dark:!bg-light dark:text-dark',
+        'bg-dark text-light',
+        'dark:bg-light dark:text-dark',
         'hover:bg-grayscale-900 dark:hover:bg-grayscale-100',
         'border border-solid border-dark hover:border-grayscale-900',
         'dark:border-light dark:hover:border-grayscale-100',
         'outline-grayscale-400 dark:outline-grayscale-400',
       ],
       light: [
-        '!bg-light text-dark',
-        'dark:!bg-dark dark:text-light',
+        'bg-light text-dark',
+        'dark:bg-dark dark:text-light',
         'hover:bg-grayscale-100 dark:hover:bg-grayscale-900',
         'border border-solid border-light hover:border-grayscale-100',
         'dark:border-dark dark:hover:border-grayscale-900',
@@ -255,7 +255,7 @@ export const buttonVariants = tv({
 
       grayPrimary: [
         'bg-none text-primary-600 dark:text-primary-400',
-        '!bg-grayscale-50 dark:!bg-grayscale-800',
+        'bg-grayscale-50 dark:bg-grayscale-800',
         'hover:bg-grayscale-200 dark:hover:bg-grayscale-700',
         'active:bg-primary-600 active:text-light',
         'dark:active:bg-primary-600 dark:active:text-light',
@@ -265,7 +265,7 @@ export const buttonVariants = tv({
       ],
       graySecondary: [
         'bg-none text-secondary-600 dark:text-secondary-400',
-        '!bg-grayscale-50 dark:!bg-grayscale-800',
+        'bg-grayscale-50 dark:bg-grayscale-800',
         'hover:bg-grayscale-200 dark:hover:bg-grayscale-700',
         'active:bg-secondary-600 active:text-light',
         'dark:active:bg-secondary-600 dark:active:text-light',
@@ -275,7 +275,7 @@ export const buttonVariants = tv({
       ],
       grayTertiary: [
         'bg-none text-tertiary-600 dark:text-tertiary-400',
-        '!bg-grayscale-50 dark:!bg-grayscale-800',
+        'bg-grayscale-50 dark:bg-grayscale-800',
         'hover:bg-grayscale-200 dark:hover:bg-grayscale-700',
         'active:bg-tertiary-600 active:text-light',
         'dark:active:bg-tertiary-600 dark:active:text-light',
@@ -285,7 +285,7 @@ export const buttonVariants = tv({
       ],
       graySuccess: [
         'bg-none text-success-600 dark:text-grayscale-400',
-        '!bg-grayscale-50 dark:!bg-grayscale-800',
+        'bg-grayscale-50 dark:bg-grayscale-800',
         'hover:bg-grayscale-200 dark:hover:bg-grayscale-700',
         'active:bg-success-600 active:text-light',
         'dark:active:bg-success-600 dark:active:text-light',
@@ -295,7 +295,7 @@ export const buttonVariants = tv({
       ],
       grayFailure: [
         'bg-none text-failure-600 dark:text-failure-400',
-        '!bg-grayscale-50 dark:!bg-grayscale-800',
+        'bg-grayscale-50 dark:bg-grayscale-800',
         'hover:bg-grayscale-200 dark:hover:bg-grayscale-700',
         'active:bg-failure-600 active:text-light',
         'dark:active:bg-failure-600 dark:active:text-light',
@@ -305,7 +305,7 @@ export const buttonVariants = tv({
       ],
       grayWarning: [
         'bg-none text-warning-500 dark:text-warning-400',
-        '!bg-grayscale-50 dark:!bg-grayscale-800',
+        'bg-grayscale-50 dark:bg-grayscale-800',
         'hover:bg-grayscale-200 dark:hover:bg-grayscale-700',
         'active:bg-warning-500 active:text-light',
         'dark:active:bg-warning-500 dark:active:text-light',
@@ -315,7 +315,7 @@ export const buttonVariants = tv({
       ],
       grayDark: [
         'bg-none text-dark dark:text-light',
-        '!bg-grayscale-50 dark:!bg-grayscale-800',
+        'bg-grayscale-50 dark:bg-grayscale-800',
         'hover:bg-grayscale-200 dark:hover:bg-grayscale-700',
         'active:bg-dark active:text-light',
         'dark:active:bg-light dark:active:text-dark',
@@ -325,7 +325,7 @@ export const buttonVariants = tv({
       ],
       grayLight: [
         'bg-none text-light dark:text-dark',
-        '!bg-grayscale-50 dark:!bg-grayscale-800',
+        'bg-grayscale-50 dark:bg-grayscale-800',
         'hover:bg-grayscale-200 dark:hover:bg-grayscale-700',
         'active:bg-light active:text-dark',
         'dark:active:bg-dark dark:active:text-light',

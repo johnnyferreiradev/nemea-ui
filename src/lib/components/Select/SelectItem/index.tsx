@@ -15,6 +15,16 @@ const SelectItem = forwardRef<
       'outline-none cursor-pointer transition rounded-md',
       'text-base text-start flex items-center',
       'data-[disabled]:cursor-default',
+
+      'text-dark',
+      'focus:bg-grayscale-100',
+      'data-[highlighted]:bg-grayscale-100',
+      'data-[disabled]:text-grayscale-200',
+
+      'dark:text-light',
+      'dark:focus:bg-grayscale-900',
+      'dark:data-[highlighted]:bg-grayscale-900',
+      'dark:data-[disabled]:text-grayscale-600',
       className,
     )}
     {...props}
