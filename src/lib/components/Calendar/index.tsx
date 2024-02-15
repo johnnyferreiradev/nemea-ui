@@ -39,7 +39,7 @@ function Calendar({
         ),
         day: twMerge(
           'flex justify-center items-center h-9 w-9 p-0 font-normal aria-selected:bg-primary-600 aria-selected:text-light text-grayscale-800 rounded-md',
-          'dark:text-grayscale-100 hover:bg-grayscale-100 dark:hover:bg-grayscale-800 aria-selected:hover:bg-primary-700 dark:aria-selected:hover:bg-primary-700',
+          'dark:text-grayscale-100 hover:bg-grayscale-100 dark:hover:bg-grayscale-900 aria-selected:hover:bg-primary-700 dark:aria-selected:hover:bg-primary-700',
         ),
         day_selected:
           'bg-primary-600 text-light hover:bg-primary-900 hover:text-light focus:bg-primary-600 focus:text-light rounded-md',
@@ -50,7 +50,7 @@ function Calendar({
         day_range_middle: twMerge(
           '[&.rdp-button]:aria-selected:bg-grayscale-50 [&.rdp-button]:aria-selected:text-grayscale-800 [&.rdp-button]:aria-selected:hover:bg-grayscale-100',
           'dark:[&.rdp-button]:aria-selected:bg-grayscale-900 dark:[&.rdp-button]:aria-selected:text-light [&.rdp-button]:aria-selected:rounded-none',
-          'dark:[&.rdp-button]:aria-selected:hover:bg-grayscale-800',
+          'dark:[&.rdp-button]:aria-selected:hover:bg-grayscale-900',
         ),
         day_hidden: 'invisible',
         ...classNames,

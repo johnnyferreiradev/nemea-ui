@@ -11,9 +11,10 @@ export default function DropdownRoot({
   triggerAsChild,
   className = '',
   theme = 'light',
+  ...rest
 }: DropdownProps) {
   return (
-    <DropdownMenu.Root>
+    <DropdownMenu.Root {...rest}>
       <DropdownMenu.Trigger
         asChild={triggerAsChild}
         className={twMerge('outline-none', className)}
