@@ -2,7 +2,7 @@
   "name": "nemea-ui",
   "description": "UI kit for web application development",
   "private": false,
-  "version": "1.0.11",
+  "version": "1.0.12",
   "type": "module",
   "publishConfig": {
     "@johnnyferreiradev:registry": "https://registry.npmjs.org"
